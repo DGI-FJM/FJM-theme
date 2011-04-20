@@ -108,12 +108,6 @@ margin-bottom: 0.667em;
 }
 
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-    -moz-border-radius-bottomleft: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
     float: right;
     padding: 0 0.4em 0.1em;
     margin-top: 0;

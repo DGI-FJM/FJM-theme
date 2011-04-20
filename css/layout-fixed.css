@@ -41,10 +41,14 @@ body {
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
-#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
+#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure, #sitecontent, #feature .section {
 margin-left:auto;
 margin-right:auto;
 width:960px;
+}
+
+#page-wrapper {
+background: url(../images/pageshadow.png) repeat-y top center transparent;
 }
 
 
@@ -486,8 +490,8 @@ padding-right:10px;
 }
 
 #headercontent-wrapper .HeaderLeft {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions

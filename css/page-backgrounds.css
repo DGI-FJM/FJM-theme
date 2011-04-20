@@ -23,17 +23,23 @@ background-color: #ffeff;
 }
 
 #header {
-border-top: 4px solid #8b1f04;
+border-top: 0px solid #8b1f04;
 }
 
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-background: #8b1f04;
+
+}
+
+#headercontent-wrapper .section {
+background: url(../images/headerbg.png) repeat-x 0 0 #007c87;
 }
 
 #page {
 }
 
-#navigation {
+#navigation .section{
+background: url(../images/navbg.png) repeat-x 0 0 #006f7a;
+height: 25px;
 }
 
 #feature {

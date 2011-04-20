@@ -12,10 +12,10 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
  * @return
  *   A form array.
  */
-function vretheme_settings($saved_settings) {
+function fjmtheme_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('vretheme');
+  $defaults = zen_theme_get_default_settings('fjmtheme');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);
@@ -25,10 +25,10 @@ function vretheme_settings($saved_settings) {
    */
   $form = array();
   /* -- Delete this line if you want to use this setting
-  $form['vretheme_example'] = array(
+  $form['fjmtheme_example'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['vretheme_example'],
+    '#default_value' => $settings['fjmtheme_example'],
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
