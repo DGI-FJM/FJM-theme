@@ -16,7 +16,11 @@ body {
 }
 
 body.front, body.not-front {
-background-color: #ffeff;
+background-color: #F9F9F9;
+}
+
+#sitecontent {
+background-color: #FFFFFF;
 }
 
 #page-wrapper {
