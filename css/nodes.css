@@ -82,6 +82,10 @@ color:#999999;
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
 }
 
+.node ul.links .first /* Node links. See also the ul.links declaration in the pages.css. */ {
+padding-left: 0;
+}
+
 .preview .node /* Preview of the content before submitting new or updated content */ {
   /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
 }
