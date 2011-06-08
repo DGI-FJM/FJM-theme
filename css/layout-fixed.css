@@ -41,7 +41,7 @@ body {
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
-#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure, #sitecontent, #feature .section {
+#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure, #sitecontent, #feature .section, .breadcrumb {
 margin-left:auto;
 margin-right:auto;
 width:960px;

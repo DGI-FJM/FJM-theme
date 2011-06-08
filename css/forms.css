@@ -126,13 +126,13 @@ form tbody {
 
 form th,
 form thead th {
-  text-align: center; /* LTR */
+  text-align: left; /* LTR */
   border: 0.7px solid #D6D1D1;
   color: #000;
   font-size: 110%;
-  padding: 	0.5em;
+  padding: 0.3em 0.5em;
+  background-color: #ececec;
 }
-
 
 form tbody th {
   border-bottom: 1px solid #ccc;
@@ -173,9 +173,10 @@ float: left;
   font-size: 9.5pt;
   color: #b3dbdf;
   -moz-border-radius: 3px;
-  border-top-right: 3px;
   -moz-border-radius: 3px;
+  border-top-right: 3px;
   border-top-left: 3px;
+  -webkit-border-radius: 3px;
   padding-right: 20px;
    padding-left: 5px;
   border: 1px solid #005F66;
@@ -231,3 +232,477 @@ clear: right;
   border: 2px solid #2E5067;
 }
 
+
+/* ------------------------------------------
+CSS3 GITHUB Buttons for Drupal 6
+Licensed under Unlicense 
+------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------------------------------------- form-submit */
+
+.book_add_child a,
+.book_add_child a:link,
+.book_add_child a:visited,
+.book_printer a,
+.book_printer a:link,
+.book_printer a:visited,
+.node_read_more a,
+.node_read_more a:link,
+.node_read_more a:visited,
+.comment_add a,
+.comment_add a:link,
+.comment_add a:visited,
+.print_html a,
+.print_html a:link,
+.print_html a:visited,
+.button,
+.form-submit,
+#views-ajax-pad .form-buttons .form-submit,
+.teaser-button,
+.content-overview-links a,
+.content-overview-links a:link,
+.content-overview-links a:visited,
+.container-inline a,
+.container-inline a:link,
+.container-inline a:visited { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    margin: 0;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font-size: 94%;
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    border: 1px solid #bbb; 
+    background-color: #eaeaea;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
+	line-height: 1.25em;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+    padding: 0.34em 1em;
+    margin-top: 0.2em;
+    }
+
+.container-inline {
+line-height: 1.25em;
+}
+
+#tabs-tabset ul.primary  a,
+.tabs ul.primary  a { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    padding: 0.55em 1.3em 0.3em;
+    border: 1px solid #cccccc;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font-size: 95%;
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);  
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0.2em; 
+    -webkit-border-bottom-left-radius: 0;  
+    -webkit-background-clip: padding;    
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    -moz-border-radius-topleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
+    -moz-background-clip: padding;    
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0;    
+    background-clip: padding-box;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline;   
+}
+
+#edit-delete,
+#feeds-delete-tab-form .form-submit {
+    color: #990000;
+}
+
+
+#feeds-delete-tab-form .form-submit:hover,
+#feeds-delete-tab-form .form-submit:focus,
+#feeds-delete-tab-form .form-submit:active,
+#edit-delete:hover,
+#edit-delete:focus,
+#edit-delete:active
+{
+    border-color: #B53F3A;
+    border-bottom-color: #A0302A;
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DA5D57), to(#B43731));
+    background-image: -moz-linear-gradient(#DA5D57, #B43731);
+    background-image: -o-linear-gradient(#DA5D57, #B43731);
+    background-image: linear-gradient(#DA5D57, #B43731);
+}
+
+.book_add_child a:hover,
+.book_add_child a:focus,
+.book_add_child a:active,
+.book_printer a:hover,
+.book_printer a:focus,
+.book_printer a:active,
+.node_read_more a:hover,
+.node_read_more a:focus,
+.node_read_more a:active,
+.comment_add a:hover,
+.comment_add a:focus,
+.comment_add a:active,
+.print_html a:hover,
+.print_html a:focus,
+.print_html a:active,
+.button:hover,
+.button:focus,
+.button:active,
+.form-submit:hover,
+.form-submit:focus,
+.form-submit:active,
+#views-ajax-pad .form-buttons .form-submit:hover,
+#views-ajax-pad .form-buttons .form-submit:focus,
+#views-ajax-pad .form-buttons .form-submit:active,
+.teaser-button:hover,
+.teaser-button:focus,
+.teaser-button:active,
+.container-inline a:hover,
+.container-inline a:focus,
+.container-inline a:active,
+.content-overview-links a:hover,
+.content-overview-links a:focus,
+.content-overview-links a:active
+{
+    border-color: #516A89;
+    border-bottom-color: #465C77;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
+    background-image: -moz-linear-gradient(#8DABF4, #516A89);
+    background-image: -o-linear-gradient(#8DABF4, #516A89);
+    background-image: linear-gradient(#8DABF4, #516A89);
+}
+
+#feeds-delete-tab-form .form-submit:active,
+#feeds-delete-tab-form .form-submit.active,
+#edit-delete:active,
+#edit-delete.active {
+    border-color: #A0302A;
+    border-bottom-color: #B53F3A;
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B43731), to(#DA5D57));
+    background-image: -moz-linear-gradient(#B43731, #DA5D57);
+    background-image: -o-linear-gradient(#B43731, #DA5D57);
+    background-image: linear-gradient(#B43731, #DA5D57);
+}
+
+
+
+.book_add_child a:active,
+.book_add_child a.active,
+.book_printer a:active,
+.book_printer a.active,
+.node_read_more a:active,
+.node_read_more a.active,
+.comment_add a:active,
+.comment_add a.active,
+.print_html a:active,
+.print_html a.active,
+.button:active,
+.button.active,
+.form-submit:active,
+.form-submit.active,
+#views-ajax-pad .form-buttons .form-submit:active,
+#views-ajax-pad .form-buttons .form-submit.active,
+.teaser-button:active,
+.teaser-button.active,
+.container-inline a:active,
+.container-inline a.active,
+.content-overview-links a:active,
+.content-overview-links a.active {
+    border-color: #465C77;
+    border-bottom-color: #516A89;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
+    background-image: -moz-linear-gradient(#516A89, #8DABF4);
+    background-image: -o-linear-gradient(#516A89, #8DABF4);
+    background-image: linear-gradient(#516A89, #8DABF4);
+}
+
+#tabs-tabset ul.primary  a:hover,
+#tabs-tabset ul.primary  a:focus,
+#tabs-tabset ul.primary  a:active,
+.tabs ul.primary  a:hover,
+.tabs ul.primary  a:focus,
+.tabs ul.primary  a:active
+{
+    border-bottom-color: #2a65a0;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 #fff; 
+    border-top: 1px solid #cccccc; 
+    border-bottom: 0px solid #cccccc; 
+    color: #333; 
+    background-color: #e7e7e7;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
+    background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
+    background-image: -o-linear-gradient(#f7f7f7, #e7e7e7);
+    background-image: linear-gradient(#f7f7f7, #e7e7e7);
+}
+
+
+#tabs-tabset ul.primary li.ui-tabs-selected a,
+#tabs-tabset ul.primary li.ui-tabs-selected a,
+#tabs-tabset ul.primary li.ui-tabs-selected a:hover,
+#tabs-tabset ul.primary li.ui-tabs-selected a:focus,
+#tabs-tabset ul.primary li.ui-tabs-selected a:active,
+#tabs-tabset ul.primary li.ui-tabs-selected a.active,
+.tabs ul.primary li:active a,
+.tabs ul.primary li.active a,
+.tabs ul.primary li.active a:hover,
+.tabs ul.primary li.active a:focus,
+.tabs ul.primary li.active a:active,
+.tabs ul.primary li.active a.active {
+    text-shadow: -1px -1px 0 #fff; 
+    border-top: 1px solid #cccccc; 
+    border-bottom: 1px solid #ffffff; 
+    color: #333; 
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+    background-image: -moz-linear-gradient(#ffffff, #ffffff);
+    background-image: -o-linear-gradient(#ffffff, #ffffff);
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+
+#header fieldset.captcha-admin-links {
+display: none
+}
+
+/* overrides extra padding on form-submit elements in Firefox */
+.button::-moz-focus-inner,
+.form-submit::-moz-focus-inner,
+.teaser-button::-moz-focus-inner,
+.tab::-moz-focus-inner,
+#tabs-tabset::-moz-focus-inner {
+	border: none;
+}
+
+#tabs-tabset,
+div.tabs {
+   width: 100%;
+}
+
+ul.primary {
+    margin: 0;
+    padding: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    display: block;
+    width: 100%;
+}
+
+ul.primary li a {
+    background-color: transparent;
+    border-width: 0px;
+    margin-right: 0em;
+    padding: 0em;
+    text-decoration: none;
+}
+
+/* correct teaser-button margin so it does not fall into text area */
+div.teaser-button-wrapper {
+    margin-top: -5px;
+    padding-right: 0;
+}
+
+/* pulls form submit buttons closer together */
+.form-submit + .form-submit, .form-submit + .form-submit-group, .form-submit-group + .form-submit, .form-submit-group + .form-submit-group {
+    margin-left: 0;
+}
+
+/* ............................................................................................................. Icons */
+
+
+
+#search-form .form-submit { 
+background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f2f2f2, #dddddd);
+background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f2f2f2, #dddddd);
+background-image: url(../images/search-darkgrey.png),linear-gradient(#f2f2f2, #dddddd);
+background-position: 0;
+padding-left: 20px;
+}
+
+#search-form .form-submit:hover,
+#search-form .form-submit:focus,
+#search-form .form-submit:active { 
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#8DABF4, #516A89);
+background-image: url(../images/search-white.png),-o-linear-gradient(#8DABF4, #516A89);
+background-image: url(../images/search-white.png),linear-gradient(#8DABF4, #516A89);
+background-position: 0;
+padding-left: 20px;
+}
+
+#search-form .form-submit:active,
+#search-form .form-submit.active {
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#516A89, #8DABF4);
+background-image: url(../images/search-white.png),-o-linear-gradient(#516A89, #8DABF4);
+background-image: url(../images/search-white.png),linear-gradient(#516A89, #8DABF4);
+background-position: 0;
+padding-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- form-submit GROUPS */
+
+/* ............................................................................................................. Standard */
+
+.group ul{
+    position: relative; 
+    overflow: visible; 
+    padding: 0em; 
+    border: 1px solid #d4d4d4; 
+    white-space: nowrap;
+    outline: none; 
+    background-color: #e8e8e8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;    
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;     
+    list-style: none;
+    margin: 0.5em 0 0 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+#tabs-tabset,
+.tabs {
+margin-top: 1.5em;
+margin-bottom: 2em;
+}
+
+ul.primary .tabs li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#tabs-tabset ul.primary  a,
+.tabs ul.primary  a {
+    float: left;
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+}
+
+#tabs-tabset > ul.primary a:active,
+.tabs > ul.primary a:active {
+	background-color: #EFEFEF;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
+    background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
+    background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
+    background-image: linear-gradient(#e7e7e7, #f7f7f7);
+    border-bottom: 1px solid #ccc;     
+}
+
+#tabs-tabset > ul.primary a:not(:first-child):not(:last-child),
+#tabs-tabset li:not(:first-child):not(:last-child) ul.primary a,
+.tabs > ul.primary a:not(:first-child):not(:last-child),
+.tabs li:not(:first-child):not(:last-child) ul.primary a { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0;   
+}
+
+#tabs-tabset > a:first-child,
+#tabs-tabset li:first-child a,
+.tabs > a:first-child,
+.tabs.primary li:first-child a { 
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0.2em; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0;  
+    border-right: 1px solid #cccccc;     
+    border-left: 1px solid #cccccc; 
+}
+
+#tabs-tabset > a:last-child,
+#tabs-tabset ul.primary li:last-child a,
+.tabs > a:last-child,
+.tabs.primary li:last-child a { 
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0em; 
+    -webkit-border-bottom-left-radius: 0em; 
+    -moz-border-radius-topleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0em;   
+    border-right: 1px solid #cccccc; 
+    border-left: 1px solid #cccccc;
+}
+
+#main-wrapper .form-text, #main-wrapper textarea {  
+    padding: 0.345em;
+    border: solid 1px #cccccc;  
+    outline: 0;
+    background: #FFFFFF;  
+    }  
+  
+#main-wrapper .form-text:hover, #main-wrapper textarea:hover,  
+#main-wrapper .form-text:focus, #main-wrapper textarea:focus {  
+    border-color: #C9C9C9;  
+    }  
+    
+.resizable-textarea {
+    width: 98%;
+}    

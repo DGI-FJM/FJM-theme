@@ -288,7 +288,12 @@
 
 
 </div><!-- /#header -->
+    
+</div><!-- /#headerandfeature -->
 
+<div id="sitecontent-wrapper"><div id="sitecontent">
+
+<?php print $breadcrumb; ?>
  <?php if($feature || feature_right): ?>
     <div style="clear:both"></div>
     <div id="feature-wrapper" class="in<?php print (bool) $feature + (bool) $feature_right; ?> "><div id="feature"><div class="section">
@@ -306,10 +311,6 @@
     </div></div></div> <!-- /.section, /#feature-wrapper, /#feature -->
     <div style="clear:both"></div>
     <?php endif; ?>
-    
-</div><!-- /#headerandfeature -->
-
-<div id="sitecontent-wrapper"><div id="sitecontent">
 
  <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
     <div style="clear:both"></div>
@@ -350,7 +351,6 @@
 
         <?php print $highlight; ?>
 
-        <?php print $breadcrumb; ?>
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>
         <?php endif; ?>
