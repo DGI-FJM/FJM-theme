@@ -292,11 +292,10 @@
 </div><!-- /#headerandfeature -->
 
 <div id="sitecontent-wrapper"><div id="sitecontent">
-
 <?php print $breadcrumb; ?>
  <?php if($feature || feature_right): ?>
-    <div style="clear:both"></div>
-    <div id="feature-wrapper" class="in<?php print (bool) $feature + (bool) $feature_right; ?> "><div id="feature"><div class="section">
+    <div id="feature-wrapper" class="in<?php print (bool) $feature + (bool) $feature_right; ?> ">
+    <div id="feature"><div class="section">
           <?php if($feature): ?>
           <div class="column FeatureMain">
             <?php print $feature; ?>
@@ -306,11 +305,10 @@
           <div class="column FeatureRight">
             <?php print $feature_right; ?>
           </div>
-          <?php endif; ?> 
-      <div style="clear:both"></div>
+          <?php endif; ?>
     </div></div></div> <!-- /.section, /#feature-wrapper, /#feature -->
     <div style="clear:both"></div>
-    <?php endif; ?>
+  <?php endif; ?>
 
  <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
     <div style="clear:both"></div>

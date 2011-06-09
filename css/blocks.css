@@ -140,7 +140,7 @@ div.admin-panel h3,
 #content-top-wrapper .block h2.title,
 .region-content-bottom  .block h2.title,
 #content-bottom-wrapper .block h2.title {
-padding:8px 10px 8px 0px;
+padding: 0 10px 8px 0px;
 border-bottom: 1px dotted #dededf;
 }
 
