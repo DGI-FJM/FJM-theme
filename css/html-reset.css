@@ -599,27 +599,33 @@ background: #333;
 color: #fff;
 }
 
-#footer a:link {
+#closure a:link,
+#bottom a:link {
 color: #888;
 text-decoration: none;
 }
 
-#footer a:visited {
+#closure a:visited,
+#bottom a:visited {
 color: #888;
 text-decoration: none;
 }
 
-#footer a:hover,
-#footer a:focus {
+#closure a:hover,
+#closure a:focus,
+#bottom a:hover,
+#bottom a:focus {
 color: #888;
 text-decoration: underline;
 }
 
-#footer a:active {
+#closure a:active,
+#bottom a:active {
 color: #888
 }
 
-#footer li  a.active,  {
+#closure li  a.active,
+#bottom li  a.active {
 color: #888
 }
 
