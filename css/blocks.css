@@ -130,7 +130,6 @@ margin-bottom:15px;
 }
 
 #content h2.title, 
-#feature .block h2.title, 
 .region-sidebar-first .block h2.title, 
 .region-sidebar-second  .block h2.title, 
 div.admin-panel h3,
@@ -143,6 +142,12 @@ div.admin-panel h3,
 padding: 0 10px 8px 0px;
 border-bottom: 1px dotted #dededf;
 }
+
+#feature .block h2.title {
+padding: 0 10px 8px 0px;
+border-bottom: 0px dotted #dededf;
+}
+
 
 #feature .block {
 padding-top: 15px;
@@ -479,4 +484,17 @@ z-index: 999;
   background-position: -96px -96px;
 }
 
+.image-block {
+position: relative; 
+}
+
+.imageblock-text {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.imageblock-text h1 {
+margin-top: 0;
+}
 
