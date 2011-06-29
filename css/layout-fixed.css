@@ -427,13 +427,23 @@ padding-top: 0px;
 float: left;
 }
 
-#feature-wrapper.in1 .column {
-width: 100%;
-float: none;
+#feature-wrapper.fl1.fr1 .FeatureMain,
+#feature-wrapper.fl2.fr1 .FeatureMain,
+#feature-wrapper.fl1.fr2 .FeatureMain,
+#feature-wrapper.fl2.fr2 .FeatureMain {
+width: 55%;
 }
 
-#feature-wrapper.in2 .column {
-width: 50%;
+#feature-wrapper.fl1.fr1 .FeatureRight,
+#feature-wrapper.fl2.fr1 .FeatureRight
+#feature-wrapper.fl1.fr2 .FeatureRight,
+#feature-wrapper.fl2.fr2 .FeatureRight {
+width: 45%;
+}
+
+#feature-wrapper.fl1.fr0 .column,
+#feature-wrapper.fl2.fr0 .column {
+width: 100%;
 }
 
 #feature-wrapper .block {
@@ -463,17 +473,17 @@ text-align: right;
 float: right;
 }
 
-#headercontent-wrapper.hf1 .column.HeaderLeft,
-#headercontent-wrapper.hf2 .column.HeaderLeft,
-#headercontent-wrapper.hf3 .column.HeaderLeft,
-#headercontent-wrapper.hf4 .column.HeaderLeft {
+#headercontent-wrapper.hf1 .HeaderLeft,
+#headercontent-wrapper.hf2 .HeaderLeft,
+#headercontent-wrapper.hf3 .HeaderLeft,
+#headercontent-wrapper.hf4 .HeaderLeft {
 width: 75%;
 }
 
-#headercontent-wrapper.hf1.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf2.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf3.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf4.hs1 .column.HeaderRight {
+#headercontent-wrapper.hf1.hs1 .HeaderRight,
+#headercontent-wrapper.hf2.hs1 .HeaderRight,
+#headercontent-wrapper.hf3.hs1 .HeaderRight,
+#headercontent-wrapper.hf4.hs1 .HeaderRight {
 width: 25%;
 }
 

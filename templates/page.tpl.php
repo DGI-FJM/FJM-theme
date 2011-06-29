@@ -283,7 +283,7 @@
 <div id="sitecontent-wrapper"><div id="sitecontent">
 <?php print $breadcrumb; ?>
  <?php if($feature || feature_right): ?>
-    <div id="feature-wrapper" class="in<?php print (bool) $feature + (bool) $feature_right; ?> ">
+    <div id="feature-wrapper" class="fl<?php print (int)(bool) $feature;?> fr<?php print (int)(bool) $feature_right;?>">
     <div id="feature"><div class="section">
           <?php if($feature): ?>
           <div class="column FeatureMain">
