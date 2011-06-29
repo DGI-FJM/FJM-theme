@@ -720,3 +720,18 @@ ul.primary .tabs li {
 .resizable-textarea {
     width: 98%;
 }    
+
+
+#fedora-repository-mnpl-advanced-search-form .form-select {
+float: left;
+margin-right: 10px;
+}
+
+#edit-andor1.form-select,
+#edit-andor2.form-select,
+#edit-andor3.form-select,
+#edit-andor4.form-select,
+#edit-andor5.form-select {
+float: none;
+clear: both;
+}

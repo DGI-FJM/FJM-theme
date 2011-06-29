@@ -486,11 +486,12 @@ z-index: 999;
 
 .image-block {
 position: relative; 
+width: 520px;
 }
 
 .imageblock-text {
 position: absolute;
-right: 0;
+right: 10px;
 top: 0;
 }
 
