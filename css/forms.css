@@ -715,3 +715,10 @@ margin-right: 10px;
 float: none;
 clear: both;
 }
+
+form#islandora-solr-search-block-form input#edit-fedora-terms1, 
+form#islandora-solr-search-block-form input#edit-fedora-terms2, 
+form#islandora-solr-search-block-form input#edit-fedora-terms3, 
+form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
+    width: 200px;
+}
