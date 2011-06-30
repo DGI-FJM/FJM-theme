@@ -575,7 +575,7 @@ div.teaser-button-wrapper {
 /* ............................................................................................................. Icons */
 
 
-
+#islandora-solr-simple-search-form .form-submit,
 #search-form .form-submit { 
 background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
 background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f2f2f2, #dddddd);
@@ -585,6 +585,9 @@ background-position: 0;
 padding-left: 20px;
 }
 
+#islandora-solr-simple-search-form .form-submit:hover,
+#islandora-solr-simple-search-form .form-submit:focus,
+#islandora-solr-simple-search-form .form-submit:active,
 #search-form .form-submit:hover,
 #search-form .form-submit:focus,
 #search-form .form-submit:active { 
@@ -600,6 +603,8 @@ padding-left: 20px;
     padding-left: 20px;
 }
 
+#islandora-solr-simple-search-form .form-submit:active,
+#islandora-solr-simple-search-form .form-submit.active,
 #search-form .form-submit:active,
 #search-form .form-submit.active {
     background: #00656e; /* Old browsers */
