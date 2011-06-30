@@ -677,9 +677,10 @@ ul.primary .tabs li {
     border-bottom: 1px solid #ccc;     
 }
 
-
-
-#main-wrapper .form-text, #main-wrapper textarea {  
+#feature-wrapper .form-text, 
+#feature-wrapper textarea,
+#main-wrapper .form-text, 
+#main-wrapper textarea {  
     padding: 0.345em;
     border: solid 1px #cccccc;  
     outline: 0;
