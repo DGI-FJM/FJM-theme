@@ -723,6 +723,6 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query 
     width: 250px;
 }
 
-#edit-islandora-simple-search-query-wrapper .form-text {
+#edit-islandora-simple-search-query-wrapper.form-item {
 display: inline;
 }
