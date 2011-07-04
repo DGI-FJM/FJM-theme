@@ -241,6 +241,48 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
+.archivolink a { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    margin: 0;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font-size: 94%;
+    color: #333; 
+    white-space: normal; 
+    cursor: pointer; 
+    outline: none; 
+    border: 1px solid #bbb; 
+    background-color: #eaeaea;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0.5em; 
+    -moz-border-radius: 0.5em; 
+    border-radius: 0.5em; 
+	line-height: 1.25em;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+    padding: 0.34em 1em;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  /* IE 5-7 */
+  filter: alpha(opacity=85);
+  /* Netscape */
+  -moz-opacity: 0.85;
+  /* Safari 1.x */
+  -khtml-opacity: 0.85;
+  /* Good browsers */
+  opacity: 0.85;
+    }
+
+
 .book_add_child a,
 .book_add_child a:link,
 .book_add_child a:visited,
@@ -542,15 +584,17 @@ ul.primary {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #ccc;
-    display: block;
     width: 100%;
     border-collapse: collapse;
 }
 
-ul.quicktabs-style-nostyle {
-height: 2.5em;
+ul.primary {
+    display: block;
 }
 
+ul.quicktabs-style-nostyle {
+	display: inline-block;
+}
 
 ul.quicktabs-style-nostyle li a,
 ul.primary li a {
@@ -669,6 +713,10 @@ ul.primary .tabs li {
     position: relative;
     top: 1px;
     margin-left: 3px;
+}
+
+.quicktabs-style-nostyle ul.quicktabs_tabs li.first a{
+    margin-left: 7px;
 }
 
 .quicktabs-style-nostyle > ul.quicktabs_tabs a:active,

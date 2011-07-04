@@ -154,10 +154,7 @@ padding-top: 15px;
 padding-bottom: 10px;
 }
 
-.region-sidebar-first .block .content, .region-sidebar-second .block .content {
-margin:0;
-padding: 0 15px 15px 0;
-}
+
 
 .region-sidebar-first .block .content .menu, 
 .region-sidebar-second .block .content .menu {
@@ -499,3 +496,51 @@ top: 0;
 margin-top: 0;
 }
 
+
+
+.archivocolitem-wrapper {height: 100px; overflow: hidden; position: relative; width: 160px;}
+.archivocolitem-wrapper[class] {display: table; position: static;}
+
+.achivoimage {
+position: absolute;
+}
+
+.archivocolitem {position: absolute; top: 50%; width: 100%; text-align: center;} /* for explorer only*/
+.archivocolitem[class] {display: table-cell; vertical-align: middle; position: static;}
+
+.archivolink-wrapper {position: relative; top: -50%; text-align: left;} /* for explorer only */
+.archivolink-wrapper {text-align:center; margin-left: auto; margin-right: auto; padding-left: 1.2em; padding-right: 1.2em;} /* for all browsers*/
+
+div.view-collections .views-admin-links ul,
+div.view-conciertos .views-admin-links ul{
+    margin-top: -4px;
+}
+
+
+.quicktabs_main.quicktabs-style-nostyle {
+border: 1px solid #ccc;
+border-top:0;
+margin-top: -5px;
+}
+
+.view-conciertos .views-view-grid td {
+padding-left: 1.35em;
+padding-right: 1.35em;
+}
+
+.view-collections table {
+width: 100%
+}
+
+.view-collections table td {
+padding:6px 5px;
+}
+
+#feature-wrapper .region-count-2 .content {
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+#feature-wrapper .region-feature-right .block {
+padding-left: 20px;
+}
