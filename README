@@ -12,7 +12,7 @@ Basic theme directory structure:
         zen (this is zen 2.x - required, should never be modified)
         FJM (sub-theme core template)
 
-Here are the breakdown of the theme files in detail:
+Here are the breakdown of the theme files, further sections below will elaborate on more important files in the theme..
 
     FJM/ - core template folder, considered a sub-theme to drupal
         fjmtheme.info - This defines regions, defines the core theme (zen), specifies js files and sets theme settings
@@ -24,13 +24,13 @@ Here are the breakdown of the theme files in detail:
         README - readme file for the theme
         js/ - this folder houses any javascript the theme may be calling
         images/ - this houses core template images
-        images-source - this would house any source image files for the theme, but there are none for fjmtheme yet
+        images-source - this would house any source image files for the theme, but there are none for fjmtheme (yet)
         css/ - all of the core css files are here
-        templates/ - content-type, view, block, page, node, etc template override locationdir, it falls back to this folder
+        templates/ - content-type, view, block, page, node, etc template override location
 
 Stylesheets
 
-Most of the changes you would need to make can be handled via css, the css files you would use for specific site overrides are simply in the css folder. For the most part these are very similar to Zen's defaults with a few additional stylesheets and some modifications with the existing ones
+Most of the changes you would need to make can be handled via css, the css files you would use for specific site overrides are in the FJM/css folder. For the most part these are very similar to Zen's defaults with a few additional stylesheets and some modifications with the existing ones. These stylesheets are defined in fjmtheme.info, if you add or remove a stylesheet then it must be declared in fjmtheme.info and you must clear your drupal cache to see the change.
 
     html-reset.css - This is the place where you should set the default styling for all HTML elements and standardize the styling across browsers.
     layout-fixed.css - Zen's default layout is based on the Zen Columns layout method. The layout-fixed.css file contains all column and layout styling.
@@ -52,8 +52,24 @@ Most of the changes you would need to make can be handled via css, the css files
     ie6.css - The Internet Explorer stylesheets are added via conditional comments. Many CSS authors find using IE "conditional stylesheets" much easier then writing rulesets with CSS hacks that are known to only apply to various versions of IE.
 
 A description of zen's default stylesheets & IE issues: http://drupal.org/node/1069786
+Javascript
+
+    FJM/js/
+        superfish.js - this is the core dropdown menu code
+        hoverIntent.js - this is a superfish javascript file that must be included, it controls how the dropdowns behave
+        jquery_example/ - this is a jquery module to add the word "Search" to search box locations
+        searchtext.js - this defines where the word "search" appears in drupal (related to the jquery_example module)
 
 More involved changes would be handled in the core template's templates/page.tpl.php (region locations & page structure) and preprocessor functions and hooks, etc would go in template.php
+Templates
+
+    FJM/
+        template.php - currently there are overrides to add custom CSS ids to all menu links, and to shorten default form lengths for fixed-width themes
+        templates/
+            page.tpl.php - This contains all of the structural php & html markup, as well as doctype & file includes.. similar to an index.php
+            views-view--collections--page.tpl.php - This overrides the collections page view on the front page of atmusica and adds it to a fieldset
+            views-view--conciertos--block.tpl.php - This overrides the conciertos block view on the front page of atmusica and adds it to a fieldset
+
 Reference docs
 
 Zen Documentation
