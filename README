@@ -47,18 +47,6 @@ Here are the breakdown of the theme files in detail:
  ** *starterkit/* - this is the kit used to create new sub-sub-themes
  ** *cairnroblib/* - sub-sub-theme
 
-h3. breakdown of files in a sub-sub-theme
-
- * *themename/* - this is the theme name, it should correspond with the name of your sub-sub-theme's .info file
- ** *logo.png* - this is the logo for the sub-sub-theme
- ** *screenshot.jpg* - this is the screenshot that appears when picking your theme in theme-settings
- ** *template.php* - custom functions can be added here that will work only for the sub-sub-theme, the sub-sub-theme will read this file first, then fall back to the core theme's template.php
- ** *theme-settings* - you can further add features for your theme-settings page here
- ** *css/* - contains 1 css file themename.css, this is for overrides of the core template to customize your sub-sub-theme
- ** *images/* - put images here that you reference from your themename.css
- ** *js/* - if you wish to add javascript to a specific sub-sub-theme, drop it here and initialize it in your themename.info
- ** *templates/* - template overrides get added here, if you are overriding a core drupal feature, then first copy the .tpl.php from the zen templates folder (example node.tpl.php) then add it to your sub-theme (core) or sub-sub-theme templates folder.. You can then directly modify it, or copy it and make a new one to further isolate the thing you want to modify (example node-content_type_name.tpl.php)
-
 
 h2. Reference docs
 
