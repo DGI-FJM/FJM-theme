@@ -48,7 +48,6 @@ stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
-stylesheets[all][]   = css/fields.css
 stylesheets[all][]   = css/superfish.css
 stylesheets[all][]   = css/islandora.css
 stylesheets[all][]   = css/jcarousel.css
