@@ -283,6 +283,7 @@ Licensed under Unlicense
     }
 
 
+a.reposubmission,
 .book_add_child a,
 .book_add_child a:link,
 .book_add_child a:visited,
@@ -320,11 +321,6 @@ Licensed under Unlicense
     cursor: pointer; 
     outline: none; 
     border: 1px solid #bbb; 
-    background-color: #eaeaea;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-    background-image: linear-gradient(#f2f2f2, #dddddd);
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     background-clip: padding-box;
@@ -338,6 +334,39 @@ Licensed under Unlicense
     padding: 0.34em 1em;
     margin-top: 0.2em;
     }
+    
+a.reposubmission,
+.book_add_child a,
+.book_add_child a:link,
+.book_add_child a:visited,
+.book_printer a,
+.book_printer a:link,
+.book_printer a:visited,
+.node_read_more a,
+.node_read_more a:link,
+.node_read_more a:visited,
+.comment_add a,
+.comment_add a:link,
+.comment_add a:visited,
+.print_html a,
+.print_html a:link,
+.print_html a:visited,
+.button,
+.form-submit,
+#views-ajax-pad .form-buttons .form-submit,
+.teaser-button,
+.content-overview-links a,
+.content-overview-links a:link,
+.content-overview-links a:visited,
+.container-inline a,
+.container-inline a:link,
+.container-inline a:visited {    
+    background-color: #eaeaea;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);    
+}
 
 .container-inline {
 line-height: 1.25em;
@@ -406,6 +435,9 @@ line-height: 1.25em;
     background-image: linear-gradient(#DA5D57, #B43731);
 }
 
+a.reposubmission:hover,
+a.reposubmission:focus,
+a.reposubmission:active,
 .book_add_child a:hover,
 .book_add_child a:focus,
 .book_add_child a:active,
@@ -470,7 +502,8 @@ line-height: 1.25em;
 }
 
 
-
+a.reposubmission:active,
+a.reposubmission.active,
 .book_add_child a:active,
 .book_add_child a.active,
 .book_printer a:active,
@@ -750,31 +783,35 @@ ul.primary .tabs li {
 }
 
 
-#feature-wrapper #fedora-repository-mnpl-advanced-search-form .form-select {
+.block-quicktabs #fedora-repository-mnpl-advanced-search-form .form-select {
 float: left;
 margin-right: 10px;
 }
 
-#feature-wrapper #edit-andor1.form-select,
-#feature-wrapper #edit-andor2.form-select,
-#feature-wrapper #edit-andor3.form-select,
-#feature-wrapper #edit-andor4.form-select,
-#feature-wrapper #edit-andor5.form-select {
+.block-quicktabs #edit-andor1.form-select,
+.block-quicktabs #edit-andor2.form-select,
+.block-quicktabs #edit-andor3.form-select,
+.block-quicktabs #edit-andor4.form-select,
+.block-quicktabs #edit-andor5.form-select {
 float: none;
 clear: both;
 }
 
-form#islandora-solr-search-block-form input#edit-fedora-terms1, 
-form#islandora-solr-search-block-form input#edit-fedora-terms2, 
-form#islandora-solr-search-block-form input#edit-fedora-terms3, 
-form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
-    width: 280px;
+.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms1, 
+.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms2, 
+.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms3, 
+.block-quicktabs form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
+    width: 250px;
 }
 
-form#fedora-repository-mnpl-advanced-search-form .form-text{
-    width: 235px;
+.block-quicktabs form#fedora-repository-mnpl-advanced-search-form .form-text{
+    width: 220px;
 }
 
-#edit-islandora-simple-search-query-wrapper.form-item {
+.block-quicktabs #edit-islandora-simple-search-query-wrapper.form-item {
 display: inline;
+}
+
+.quicktabs-style-nostyle .block-islandora_solr_search {
+padding: 15px;
 }

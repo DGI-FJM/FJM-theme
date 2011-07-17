@@ -150,8 +150,8 @@ border-bottom: 0px dotted #dededf;
 
 
 #feature .block {
-padding-top: 15px;
-padding-bottom: 10px;
+margin-bottom: 1.5em;
+margin-top: 1em;
 }
 
 
@@ -523,6 +523,16 @@ border-top:0;
 margin-top: -5px;
 }
 
+#feature .block-quicktabs .block,
+.block-quicktabs .block {
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.block-quicktabs .block { 
+  padding: 15px;
+}
+
 .view-conciertos .views-view-grid td {
 padding-left: 1.35em;
 padding-right: 1.35em;
@@ -536,11 +546,66 @@ width: 100%
 padding:6px 5px;
 }
 
-#feature-wrapper .region-count-2 .content {
+#feature-wrapper #block-block-1 .content {
 border: 1px solid #ccc;
 padding: 10px;
 }
 
-#feature-wrapper .region-feature-right .block {
-padding-left: 20px;
+#feature-wrapper .region-feature-right {
+padding-left: 10px;
+}
+
+.publicaciones .views-field-field-medimage-fid {
+float: left;
+margin-right: 20px;
+}
+
+.publicaciones .views-field-field-submissionlink-url {
+text-align: left;
+margin-top: 2em;
+}
+
+#block-menu-menu-ceacs .menu {
+  padding-left: 0px;
+}
+
+#block-menu-menu-ceacs ul li {
+    list-style-image: none;
+    list-style-type: none;
+    border-top: 1px solid #ebebeb;    
+}
+    
+#block-menu-menu-ceacs h2.title {
+    background-color: #00547a;
+    color: #fff;
+    border: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+#block-menu-menu-ceacs ul.menu li, 
+#block-menu-menu-ceacs li.expanded, 
+#block-menu-menu-ceacs li.collapsed, 
+#block-menu-menu-ceacs li.leaf {
+    margin: 0;
+    padding: 0;
+}
+
+#block-menu-menu-ceacs ul li a {
+  padding: 7px 20px;
+  width: 175px;
+  display: block;
+  color: #000;  
+}
+
+#block-menu-menu-ceacs ul li a:hover,
+#block-menu-menu-ceacs ul li a:active,
+#block-menu-menu-ceacs ul li a.active {
+  background-color: #b2c3c6;
+  color: #000;
+  text-decoration: none;
 }

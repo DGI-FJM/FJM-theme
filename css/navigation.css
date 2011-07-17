@@ -36,6 +36,58 @@ display: none;
 }
 
 /*
+ * Footer Links
+ */
+ 
+#footer ul.menu li {
+    float: left;
+    list-style-type: none;
+    padding: 0 0.75em;
+    margin: 0;
+    line-height: 1em;
+    border-right: 1px solid #000;    
+}
+
+#footer ul.menu li.last {
+    border-right: 0px solid #000;   
+}
+
+#menu-item-id-613, #menu-item-id-617, #menu-item-id-619, #menu-item-id-618, #menu-item-id-616, #menu-item-id-620 {
+  background: url('../images/icon-footersprites.png') no-repeat;
+  padding-left: 20px;  
+}
+
+#menu-item-id-613 { /* calendario */
+  background-position: 0 0;
+}
+
+#menu-item-id-617 { /* enews */
+  background-position: 0 -14px;
+}
+
+#menu-item-id-619 { /* facebook */
+  background-position: 0 -28px;
+}
+
+#menu-item-id-618 { /* podcast */
+  background-position: 0 -42px;
+}
+
+#menu-item-id-616 { /* rss */
+  background-position: 0 -56px;
+}
+
+#menu-item-id-620 { /* twitter */
+  background-position: 0 -70px;
+}
+
+
+
+#footer ul.menu {
+    padding: 0.5em 0;
+}
+
+/*
  * Menu blocks
  */
 .block-menu {
