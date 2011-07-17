@@ -33,17 +33,17 @@ Here are the breakdown of the theme files in detail:
 
  * *FJM/* - core template folder, considered a sub-theme to drupal
  ** *fjmtheme.info* - This defines regions, defines the core theme (zen), specifies js files and sets theme settings
- ** *template.php* - preprocessor functions and hooks would go here, if a sub-sub-theme does not have a template.php, it falls back to this one
- ** *theme-settings.php* - not used, as this is part of the core template but must be present
- ** *logo.png* - default logo - not used, as this is part of the core template but must be present
- ** *favicon.ico* - default favicon - not used, as this is part of the core template but must be present
- ** *screenshot.png* - screenshot on themes page for template (not important, but must be present)
+ ** *template.php* - preprocessor functions and hooks would go here.
+ ** *theme-settings.php* - contains the code for the settings that appear in theme settings.
+ ** *logo.png* - default logo
+ ** *favicon.ico* - default favicon
+ ** *screenshot.png* - screenshot on themes page
  ** *README* - readme file for the theme
  ** *js/* - this folder houses any javascript the theme may be calling
- ** *images/* - this houses core template images, if a sub-sub-theme does not call an image, the theme falls back to these in the core template
- ** *images-source* - this houses the source psd's that are used to create the header, search bar & nav bar
+ ** *images/* - this houses core template images
+ ** *images-source* - this would house any source image files for the theme, but there are none for fjmtheme yet
  ** *css/* - all of the core css files are here
- ** *templates/* - content-type, view, block, page, node, etc template override location, if a sub-sub-theme does not have template files in it's own templates dir, it falls back to this folder
+ ** *templates/* - content-type, view, block, page, node, etc template override locationdir, it falls back to this folder
  ** *starterkit/* - this is the kit used to create new sub-sub-themes
  ** *cairnroblib/* - sub-sub-theme
 
