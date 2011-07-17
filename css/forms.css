@@ -372,46 +372,6 @@ a.reposubmission,
 line-height: 1.25em;
 }
 
-.quicktabs-style-nostyle ul.quicktabs_tabs li a,
-#tabs-tabset ul.primary  a,
-.tabs ul.primary  a { 
-    position: relative; 
-    overflow: visible; 
-    display: inline-block; 
-    padding: 0.55em 1.3em 0.3em;
-    border: 1px solid #cccccc;
-    text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff; 
-    font-size: 95%;
-    color: #333; 
-    white-space: nowrap; 
-    cursor: pointer; 
-    outline: none; 
-    background-color: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-    background-image: linear-gradient(#f2f2f2, #dddddd);  
-    -webkit-border-top-right-radius: 0.2em; 
-    -webkit-border-bottom-right-radius: 0; 
-    -webkit-border-top-left-radius: 0.2em; 
-    -webkit-border-bottom-left-radius: 0;  
-    -webkit-background-clip: padding;    
-    -moz-border-radius-topright: 0.2em; 
-    -moz-border-radius-bottomright: 0; 
-    -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0; 
-    -moz-background-clip: padding;    
-    border-top-right-radius: 0.2em; 
-    border-bottom-right-radius: 0; 
-    border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0;    
-    background-clip: padding-box;
-    /* IE hacks */
-    zoom: 1; 
-    *display: inline;   
-}
-
 #edit-delete,
 #feeds-delete-tab-form .form-submit {
     color: #990000;
@@ -540,57 +500,6 @@ a.reposubmission.active,
     background: linear-gradient(top, #00656e 0%,#339da7 100%); /* W3C */
 }
 
-.quicktabs-style-nostyle ul.quicktabs_tabs li a:hover,
-.quicktabs-style-nostyle ul.quicktabs_tabs li a:focus,
-.quicktabs-style-nostyle ul.quicktabs_tabs li a:active,
-.drupal-tabs ul.primary  a:hover,
-.drupal-tabs ul.primary  a:focus,
-.drupal-tabs ul.primary  a:active,
-.tabs ul.primary  a:hover,
-.tabs ul.primary  a:focus,
-.tabs ul.primary  a:active
-{
-    border-bottom-color: #2a65a0;
-    text-decoration: none; 
-    text-shadow: -1px -1px 0 #fff; 
-    border-top: 1px solid #cccccc; 
-    border-bottom: 0px solid #cccccc; 
-    color: #333; 
-    background-color: #e7e7e7;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
-    background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
-    background-image: -o-linear-gradient(#f7f7f7, #e7e7e7);
-    background-image: linear-gradient(#f7f7f7, #e7e7e7);
-}
-
-
-.quicktabs-style-nostyle ul.quicktabs_tabs li.active a,
-.quicktabs-style-nostyle ul.quicktabs_tabs li.active a:hover,
-.quicktabs-style-nostyle ul.quicktabs_tabs li.active a:focus,
-.quicktabs-style-nostyle ul.quicktabs_tabs li.active a:active,
-.quicktabs-style-nostyle ul.quicktabs_tabs li.active a.active,
-.drupal-tabs ul.primary li.ui-tabs-selected a,
-.drupal-tabs ul.primary li.ui-tabs-selected a:hover,
-.drupal-tabs ul.primary li.ui-tabs-selected a:focus,
-.drupal-tabs ul.primary li.ui-tabs-selected a:active,
-.drupal-tabs ul.primary li.ui-tabs-selected a.active,
-.tabs ul.primary li:active a,
-.tabs ul.primary li.active a,
-.tabs ul.primary li.active a:hover,
-.tabs ul.primary li.active a:focus,
-.tabs ul.primary li.active a:active,
-.tabs ul.primary li.active a.active {
-    text-shadow: -1px -1px 0 #fff; 
-    border-top: 1px solid #cccccc; 
-    border-bottom: 1px solid #ffffff; 
-    color: #333; 
-    background-color: #ffffff;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
-    background-image: -moz-linear-gradient(#ffffff, #ffffff);
-    background-image: -o-linear-gradient(#ffffff, #ffffff);
-    background-image: linear-gradient(#ffffff, #ffffff);
-}
-
 #header fieldset.captcha-admin-links {
 display: none
 }
@@ -599,43 +508,8 @@ display: none
 .button::-moz-focus-inner,
 .form-submit::-moz-focus-inner,
 .teaser-button::-moz-focus-inner,
-.tab::-moz-focus-inner,
-#tabs-tabset::-moz-focus-inner {
+.tab::-moz-focus-inner {
 	border: none;
-}
-
-.quicktabs-style-nostyle,
-.drupal-tabs,
-div.tabs {
-   width: 100%;
-}
-
-ul.quicktabs-style-nostyle, 
-ul.primary {
-    margin: 0;
-    padding: 0;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #ccc;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-ul.primary {
-    display: block;
-}
-
-ul.quicktabs-style-nostyle {
-	display: inline-block;
-}
-
-ul.quicktabs-style-nostyle li a,
-ul.primary li a {
-    background-color: transparent;
-    border-width: 0px;
-    margin-right: 0em;
-    padding: 0em;
-    text-decoration: none;
 }
 
 /* correct teaser-button margin so it does not fall into text area */
@@ -726,42 +600,7 @@ padding-left: 20px;
 }
 
 
-.drupal-tabs,
-.tabs {
-margin-top: 1.5em;
-margin-bottom: 0em;
-}
 
-ul.quicktabs_tabs li,
-ul.primary .tabs li {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.quicktabs-style-nostyle ul.quicktabs_tabs li a,
-.drupal-tabs ul.primary  a,
-.tabs ul.primary  a {
-    float: left;
-    position: relative;
-    top: 1px;
-    margin-left: 3px;
-}
-
-.quicktabs-style-nostyle ul.quicktabs_tabs li.first a{
-    margin-left: 7px;
-}
-
-.quicktabs-style-nostyle > ul.quicktabs_tabs a:active,
-.drupal-tabs > ul.primary a:active,
-.tabs > ul.primary a:active {
-	background-color: #EFEFEF;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
-    background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
-    background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
-    background-image: linear-gradient(#e7e7e7, #f7f7f7);
-    border-bottom: 1px solid #ccc;     
-}
 
 #feature-wrapper .form-text, 
 #feature-wrapper textarea,
@@ -783,35 +622,3 @@ ul.primary .tabs li {
 }
 
 
-.block-quicktabs #fedora-repository-mnpl-advanced-search-form .form-select {
-float: left;
-margin-right: 10px;
-}
-
-.block-quicktabs #edit-andor1.form-select,
-.block-quicktabs #edit-andor2.form-select,
-.block-quicktabs #edit-andor3.form-select,
-.block-quicktabs #edit-andor4.form-select,
-.block-quicktabs #edit-andor5.form-select {
-float: none;
-clear: both;
-}
-
-.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms1, 
-.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms2, 
-.block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms3, 
-.block-quicktabs form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
-    width: 250px;
-}
-
-.block-quicktabs form#fedora-repository-mnpl-advanced-search-form .form-text{
-    width: 220px;
-}
-
-.block-quicktabs #edit-islandora-simple-search-query-wrapper.form-item {
-display: inline;
-}
-
-.quicktabs-style-nostyle .block-islandora_solr_search {
-padding: 15px;
-}

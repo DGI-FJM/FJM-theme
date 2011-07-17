@@ -6,3 +6,148 @@
  */
 
 
+/* views styling for front page of atmusica */
+
+.view-conciertos .views-view-grid td {
+    padding-left: 1.35em;
+    padding-right: 1.35em;
+}
+
+.view-collections table {
+    width: 100%
+}
+
+.view-collections table td {
+    padding:6px 5px;
+}
+
+.archivocolitem-wrapper {
+    height: 100px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 160px;
+}
+
+.archivocolitem-wrapper[class] {
+    display: table; 
+    position: static;
+}
+
+.achivoimage {
+    position: absolute;
+}
+
+.archivocolitem {
+    position: absolute; 
+    top: 50%; 
+    width: 100%; 
+    text-align: center;
+} /* for explorer only*/
+
+.archivocolitem[class] {
+    display: table-cell; 
+    vertical-align: middle; 
+    position: static;
+}
+
+.archivolink-wrapper {
+    position: relative; 
+    top: -50%; 
+    text-align: left;
+} /* for explorer only */
+
+.archivolink-wrapper {
+    text-align:center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 1.2em; 
+    padding-right: 1.2em;
+} /* for all browsers*/
+
+div.view-collections .views-admin-links ul,
+div.view-conciertos .views-admin-links ul{
+    margin-top: -4px;
+}
+
+/* views slideshow default styling */
+
+.view-viewsslideshow {
+margin-top: 5px;
+}
+
+.view-viewsslideshow .views-content-title {
+-moz-border-radius-bottomright: 10px;
+border-bottom-right-radius: 10px;
+bottom-right-radius: 10px;
+background:none repeat scroll 0 0 #333;
+padding:5px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 22px;
+    margin: 0 10px 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: 95%;
+    color: #fff;
+}
+
+.view-viewsslideshow .views-field-title {
+    background-color: #e6e7e8;
+    height: 55px;
+    margin-top: -60px;
+    opacity: 0.7;
+    width: 460px;
+    color: #fff;
+    bottom: 0;
+}
+
+.view-viewsslideshow .views-content-title a {
+padding: 10px;
+}
+
+.view-viewsslideshow .activeSlide .views-field-counter {
+color: #fff;
+background: url(../images/rotator_pager_active_bg.png) no-repeat 1px 1px transparent;
+}
+
+#views_slideshow_thumbnailhover_teaser_section_viewsslideshow-block_1 {
+display: block;
+clear: both;
+height: 265px;
+}
+
+#views_slideshow_thumbnailhover_breakout_teasers_viewsslideshow-block_1 {
+width: 100px;
+}
+
+.view-viewsslideshow .views-slideshow-controls-bottom {
+float: right;
+padding-top: 0px;
+padding-bottom: 5px;
+ margin-right: -5px;
+}
+
+
+.view-viewsslideshow .views-field-nothing {
+float: right;
+font-style: italic;
+font-size: 90%;
+margin-top: -20px;
+margin-right: 10px;
+z-index: 99;
+position: relative;
+}
+
+.view-viewsslideshow .views-field-counter {
+display: inline-block;
+float: left;
+padding: 0 5px 0 5px;
+margin: 0 0.1em 0 0.1em;
+color: #000;
+background: url(../images/rotator_pager_bg.png) no-repeat 1px 1px transparent;
+font-size: 95%;
+cursor: pointer; 
+cursor: hand;
+z-index: 999;
+}

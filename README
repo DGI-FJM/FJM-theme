@@ -23,6 +23,8 @@ Most of the changes you would need to make can be handled via css, the css files
 example:  
 
  * FJM/css/*.css
+ 
+A description of zen's stylesheets: http://drupal.org/node/1069786
 
 More involved changes would be handled in the core template's templates/page.tpl.php (region locations & page structure) and preprocessor functions and hooks, etc would go in template.php
 
