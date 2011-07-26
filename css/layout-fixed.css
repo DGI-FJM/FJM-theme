@@ -879,4 +879,38 @@ margin: 0 ;
 z-index:99;
 }
 
+/*
+ * Front First sidebar
+ */
+.front .region-sidebar-first {
+  float: left; /* LTR */
+  width: 300px;
+  margin-left: 0; /* LTR */
+  margin-right: -240px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
 
+
+/*
+ * Front Content
+ */
+.front #content,
+.front.no-sidebars #content {
+  float: left; /* LTR */
+  width: 960px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.front.sidebar-first #content {
+  width: 660px;
+  margin-left: 300px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.front.two-sidebars #content {
+  width: 420px;
+  margin-left: 300px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
