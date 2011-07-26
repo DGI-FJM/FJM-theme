@@ -156,15 +156,12 @@ z-index: 999;
 .navegaelarchivo-view .views-slideshow-controls-top {
     width: 300px;
     float: left;
-}
-
-#views_slideshow_thumbnailhover_main_navegaelarchivo-block_1 {
-    margin-left: 300px;
+    border-right: 1px solid #ebebeb;
 }
 
 .navegaelarchivo-view .views-slideshow-controls-top .views-content-title {
   padding: 7px 20px 7px 5px;
-  width: 200px;
+  width: 300px;
   display: block;
   color: #000;  
   cursor: pointer;
@@ -177,4 +174,9 @@ z-index: 999;
   background-color: #eaede6;
   color: #000;
   text-decoration: none;
+}
+
+.navegaelarchivo-view .views_slideshow_main {
+  background-color: #eaede6;
+  margin-left: 300px;
 }
