@@ -151,3 +151,13 @@ cursor: pointer;
 cursor: hand;
 z-index: 999;
 }
+
+
+.navegaelarchivo-view .views-slideshow-controls-top {
+    width: 300px;
+    float: left;
+}
+
+#views_slideshow_thumbnailhover_main_navegaelarchivo-block_1 {
+    margin-left: 300px;
+}
