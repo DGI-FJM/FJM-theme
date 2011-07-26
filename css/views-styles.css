@@ -161,3 +161,19 @@ z-index: 999;
 #views_slideshow_thumbnailhover_main_navegaelarchivo-block_1 {
     margin-left: 300px;
 }
+
+
+.navegaelarchivo-view .views-slideshow-controls-top a {
+  padding: 7px 20px;
+  width: 175px;
+  display: block;
+  color: #000;  
+}
+
+.navegaelarchivo-view .views-slideshow-controls-top a:hover,
+.navegaelarchivo-view .views-slideshow-controls-top a:active,
+.navegaelarchivo-view .views-slideshow-controls-top a.active {
+  background-color: #b2c3c6;
+  color: #000;
+  text-decoration: none;
+}
