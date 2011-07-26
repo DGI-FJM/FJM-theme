@@ -162,13 +162,13 @@ z-index: 999;
     margin-left: 300px;
 }
 
-
 .navegaelarchivo-view .views-slideshow-controls-top .views-content-title {
   padding: 7px 20px 7px 5px;
   width: 200px;
   display: block;
   color: #000;  
   cursor: pointer;
+  border-top: 1px solid #ebebeb;
 }
 
 .navegaelarchivo-view .views-slideshow-controls-top .activeSlide .views-content-title:hover,
