@@ -289,7 +289,7 @@ padding: 0 10px 0 5px;
 
 .region-sidebar-second .section {
   margin: 10px; /* LTR */
-  padding: 0 5px 0 0;
+  padding: 0 5px 0 10px;
 }
 
 /*
@@ -884,9 +884,9 @@ z-index:99;
  */
 .front .region-sidebar-first {
   float: left; /* LTR */
-  width: 340px;
+  width: 350px;
   margin-left: 0; /* LTR */
-  margin-right: -340px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  margin-right: -350px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
 
@@ -904,13 +904,13 @@ z-index:99;
 }
 
 .front.sidebar-first #content {
-  width: 620px;
-  margin-left: 340px; /* LTR */ /* The width of .region-sidebar-first. */
+  width: 610px;
+  margin-left: 350px; /* LTR */ /* The width of .region-sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .front.two-sidebars #content {
-  width: 380px;
-  margin-left: 340px; /* LTR */ /* The width of .region-sidebar-first */
+  width: 370px;
+  margin-left: 350px; /* LTR */ /* The width of .region-sidebar-first */
   margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
