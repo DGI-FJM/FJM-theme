@@ -164,16 +164,17 @@ z-index: 999;
 
 
 .navegaelarchivo-view .views-slideshow-controls-top .views-content-title {
-  padding: 7px 20px;
-  width: 175px;
+  padding: 7px 20px 7px 5px;
+  width: 200px;
   display: block;
   color: #000;  
+  cursor: pointer;
 }
 
 .navegaelarchivo-view .views-slideshow-controls-top .activeSlide .views-content-title:hover,
 .navegaelarchivo-view .views-slideshow-controls-top .activeSlide .views-content-title:active,
 .navegaelarchivo-view .views-slideshow-controls-top .activeSlide .views-content-title.active {
-  background-color: #b2c3c6;
+  background-color: #eaede6;
   color: #000;
   text-decoration: none;
 }
