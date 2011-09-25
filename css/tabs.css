@@ -194,7 +194,7 @@ clear: both;
 .block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms2, 
 .block-quicktabs form#islandora-solr-search-block-form input#edit-fedora-terms3, 
 .block-quicktabs form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
-    width: 250px;
+    width: 190px;
 }
 
 .block-quicktabs form#fedora-repository-mnpl-advanced-search-form .form-text{

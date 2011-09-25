@@ -15,7 +15,7 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
 function fjmtheme_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('fjmtheme');
+  $defaults = zen_theme_get_default_settings('corporate');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);
@@ -24,14 +24,20 @@ function fjmtheme_settings($saved_settings) {
    * Create the form using Forms API: http://api.drupal.org/api/6
    */
   $form = array();
-  /* -- Delete this line if you want to use this setting
-  $form['fjmtheme_example'] = array(
-    '#type'          => 'checkbox',
-    '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['fjmtheme_example'],
-    '#description'   => t("This option doesn't do anything; it's just an example."),
+
+
+  $form['fjm_design'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Collection Color Scheme'),
+    '#default_value' => $settings['fjm_design'],
+    '#options'       => array(
+      '0' => t('None (default)'),
+      '1' => t('atmusica'),
+      '2' => t('ceacs'),
+     ),
+    '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
+    
   );
-  // */
 
   // Add the base theme's settings.
   $form += zen_settings($saved_settings, $defaults);

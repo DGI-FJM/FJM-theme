@@ -112,6 +112,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile) ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile) ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IE)]><!--><html class="no-js" manifest="default.appcache?v=1" lang="en"><!--<![endif]-->
+
+
 <head>
 
   <title><?php print $head_title; ?></title>
@@ -282,9 +289,9 @@
 
 <div id="sitecontent-wrapper"><div id="sitecontent">
 <?php print $breadcrumb; ?>
- <?php if($feature || feature_right): ?>
+ <?php if($feature || $feature_right): ?>
     <div id="feature-wrapper" class="fl<?php print (int)(bool) $feature;?> fr<?php print (int)(bool) $feature_right;?>">
-    <div id="feature"><div class="section">
+    <div id="feature"><div class="section clearfix">
           <?php if($feature): ?>
           <div class="column FeatureMain">
             <?php print $feature; ?>

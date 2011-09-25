@@ -323,10 +323,6 @@ fieldset {
   margin: 1em 0;
 }
 
-#feature p {
-margin: 0;
-padding: 0;
-}
 
 blockquote {
   background: url(../images/open-quote.png) no-repeat 0 0;
@@ -599,6 +595,27 @@ background: #333;
 color: #fff;
 }
 
+.navegaelarchivo-view .views-slideshow-controls-top a:link,
+.navegaelarchivo-view .views-slideshow-controls-top a:visited,
+.navegaelarchivo-view .views-slideshow-controls-top a:hover,
+.navegaelarchivo-view .views-slideshow-controls-top a:active,
+.navegaelarchivo-view .views-slideshow-controls-top li  a.active,
+.navegaelarchivo-view .views-slideshow-controls-top li.active a {
+color: #000;
+text-decoration: none;
+}
+
+.atmusica-slideshow .slideshowtitle,
+.atmusica-slideshow .slideshowtitle a:link,
+.atmusica-slideshow .slideshowtitle a:visited,
+.atmusica-slideshow .slideshowtitle a:hover,
+.atmusica-slideshow .slideshowtitle a:active,
+.atmusica-slideshow .slideshowtitle li  a.active,
+.atmusica-slideshow .slideshowtitle li.active a {
+color: #A9D2D3;
+text-decoration: none;
+}
+
 
 #closure a:link,
 #bottom a:link {
@@ -730,6 +747,10 @@ border-left:1px solid #ccc;
 table {
   border-collapse: collapse;
   /* width: 100%; */ /* Prevent cramped-looking tables */
+}
+
+#footer-message table{
+    margin: 0;
 }
 
 th,
