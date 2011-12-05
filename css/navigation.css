@@ -5,13 +5,123 @@
  * Navigation Styling
  */
 
+//#header #nav ul a:link, #header #superfish ul a:link,
+//#header #nav ul a:visited, #header #superfish ul a:visited{
+//  color: #fff;
+//}
 
-/*
- * The active item in a Drupal menu
- */
-li a.active {
+//#nav ul.menu li:hover a,
+//#superfish ul.menu li:hover a {
+//  color: #2d2d2d;
+//}
 
-}
+///* hover and active-trail color */ 
+//#header #navigation li a.active,
+//#header #navigation li a:visited .active,
+//#header #navigation li a:hover,
+//#header #navigation li.sfHover a {
+//  background: #e0e6d7; /* Old browsers */
+//  background: -moz-linear-gradient(top, #e0e6d7 0%, #babeb1 50%, #93968d 100%); /* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e6d7), color-stop(50%,#babeb1), color-stop(100%,#93968d)); /* Chrome,Safari4+ */
+//  background: -webkit-linear-gradient(top, #e0e6d7 0%,#babeb1 50%,#93968d 100%); /* Chrome10+,Safari5.1+ */
+//  background: -o-linear-gradient(top, #e0e6d7 0%,#babeb1 50%,#93968d 100%); /* Opera11.10+ */
+//  background: -ms-linear-gradient(top, #e0e6d7 0%,#babeb1 50%,#93968d 100%); /* IE10+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e6d7', endColorstr='#93968d',GradientType=0 ); /* IE6-9 */
+//  background: linear-gradient(top, #e0e6d7 0%,#babeb1 50%,#93968d 100%); /* W3C */
+//  color: #2d2d2d  !important;
+//}
+
+
+
+///* superfish border seperator */ 
+
+//#nav li, #superfish li {
+//  border-right: 1px solid #0f757f;
+//  background: #1394a0; /* Old browsers */
+//  background: -moz-linear-gradient(top, #1394a0 0%, #0f7983 50%, #0c5e66 100%); /* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1394a0), color-stop(50%,#0f7983), color-stop(100%,#0c5e66)); /* Chrome,Safari4+ */
+//  background: -webkit-linear-gradient(top, #1394a0 0%,#0f7983 50%,#0c5e66 100%); /* Chrome10+,Safari5.1+ */
+//  background: -o-linear-gradient(top, #1394a0 0%,#0f7983 50%,#0c5e66 100%); /* Opera11.10+ */
+//  background: -ms-linear-gradient(top, #1394a0 0%,#0f7983 50%,#0c5e66 100%); /* IE10+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1394a0', endColorstr='#0c5e66',GradientType=0 ); /* IE6-9 */
+//  background: linear-gradient(top, #1394a0 0%,#0f7983 50%,#0c5e66 100%); /* W3C */
+//}
+
+//#nav li a, #superfish li a {
+//  border-right: 1px solid #2397a1;
+//}
+
+//#nav li li a, #superfish li li a {
+//  border-right: 0;
+//}
+
+//#nav li li, #superfish li li {
+//  border-width: 0 1px 0 1px;
+//  border-style: solid;
+//  border-color: #DFDFD8;
+//}
+
+//#nav li li.last, #superfish li li.last {
+//  border-bottom: 1px solid #DFDFD8;
+//}
+
+//#superfish .menu li li.first,
+//#superfish .menu li li li.first {
+//  border-top:1px solid #ccc;
+//}
+
+//#superfish .menu li li,
+//#superfish .menu li li li {
+//  border-bottom:1px solid #ccc; 
+//  border-left:1px solid #ccc;
+//}
+
+//.NavbarLeft li a {
+//  font-size: 1.08em;
+//  font-family: Arial,Helvetica,sans-serif;
+//  letter-spacing: 1px;
+//}
+
+//.NavbarLeft li li a {
+//  font-size: 12px;
+//  font-family: Verdana, Geneva, Tahoma, "DejaVu Sans", sans-serif;
+//  letter-spacing: 0px;
+//}
+
+///*
+// * The active item in a Drupal menu
+// */
+//li a.active {
+
+//}
+
+
+//#nav ul {
+//  line-height: 1.5em;
+//  height: 23px;
+//}
+
+//#nav li {
+//  float:left;
+//  word-wrap: normal;
+//  white-space: normal;
+//  padding: 4px 0;
+//}
+
+//#nav .menu a {
+//  padding: 4px 1em;
+//  text-decoration:none;
+//}
+
+
+//#navigation #nav { 
+//  width: 100%;
+//}
+
+//#nav .menu, #nav .menu * {
+//  margin:0;
+//  list-style:none;
+//}
 
 /*
  * Navigation bar
@@ -22,8 +132,9 @@ li a.active {
 .region-navigation {
 }
 
-#navigation h2.title {
-display: none;
+#navigation h2.title,
+#breadcrumb h2.title {
+  display: none;
 }
 
 /*
@@ -35,21 +146,52 @@ display: none;
 #secondary-menu {
 }
 
+#breadcrumb ul.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#breadcrumb ul.menu li {
+    float: left;
+    list-style: none outside none;
+    padding: 0 0.75em;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-image: none;
+}
+
+
+
 /*
  * Footer Links
  */
  
+#footer ul.menu {
+  padding: 0 0 0 15px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: bottom;
+}
+
+
 #footer ul.menu li {
-    float: left;
-    list-style-type: none;
-    padding: 0 0.75em;
-    margin: 0;
-    line-height: 1em;
-    border-right: 1px solid #000;    
+  float: left;
+  list-style: none outside none;
+  padding: 0 0.75em;
+  margin: 0;
+  line-height: 1.2em;
+  border-right: 1px solid #000;
+  overflow: hidden;
+  height: 13px;
 }
 
 #footer ul.menu li.last {
     border-right: 0px solid #000;   
+}
+
+#footer .block {
+  margin-bottom: 0;
 }
 
 #menu-item-id-613, /* atmusica */
@@ -65,7 +207,8 @@ display: none;
 #menu-item-id-227,
 #menu-item-id-228 {
   background: url('../images/icon-footersprites.png') no-repeat;
-  padding-left: 20px;  
+  padding-left: 20px;
+  padding-top: 0px;
 }
 
 #menu-item-id-613, #menu-item-id-221 { /* calendario */
@@ -92,11 +235,27 @@ display: none;
   background-position: 0 -70px;
 }
 
+/* Social Icons */
 
-
-#footer ul.menu {
-    padding: 0.5em 0;
+.social-icons .Facebook, 
+.social-icons .Twitter, 
+.social-icons .bibliotecamarches {
+  background: url('../images/social-icons.png') no-repeat;
+  padding-top: 0px;
 }
+
+.social-icons .Facebook { /* facebook */
+  background-position: 0 0;
+}
+
+.social-icons .Twitter { /* twitter */
+  background-position: 0 -35px;
+}
+
+.social-icons .bibliotecamarches { /* email */
+  background-position: 0 -71px;
+}
+
 
 /*
  * Menu blocks
@@ -108,4 +267,376 @@ display: none;
  * "Menu block" blocks. See http://drupal.org/project/menu_block
  */
 .block-menu_block {
+}
+
+/* styles for march.es menu blocks */
+
+#menuI .navegacion ul.submenu {
+    background-color: #F2F2EA;
+    border-bottom: 1px solid #DFDFD8;
+    border-left: 1px solid #DFDFD8;
+    border-right: 1px solid #DFDFD8;
+    float: left;
+    line-height: 20px;
+    padding: 20px 0;
+    position: absolute;
+    width: 180px;
+    z-index: 998;
+}
+#menuI .navegacion .submenu li {
+    clear: both;
+    width: 100%;
+}
+#menuI .navegacion .submenu .interlineado {
+    line-height: 14px;
+}
+#menuI .navegacion .submenu li a {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #555555;
+    height: 100% !important;
+    margin-left: 20px;
+    width: 100% !important;
+}
+            
+.ie7 #menuI .navegacion .submenu li { 
+        color:#555; 
+        height:100%!important;  /* Con este important se fuerza la altura de los submenus */
+        background:none!important; /* Necesario para reemplazar el background por defecto  */
+        width:140px!important;
+}
+
+#menuI .navegacion .submenu li a:hover {
+    text-decoration: underline;
+}
+#menuI .navegacion li:hover .submenu {
+    display: block;
+}
+#menuI li.submbiblioresalt {
+    background-color: #F2F2EA;
+    color: #555555;
+    cursor: default;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+    width: 250px !important;
+}
+#menuI .textnormsubmbiblio {
+    background-color: #F2F2EA;
+    margin-top: 10px;
+}
+#menuI ul ul li {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+#menuI .submenu a:hover {
+    background-color: #F2F2EA;
+    color: #555555;
+}
+#menuI ul.submenubiblio li {
+    background-image: none;
+    display: inline-block;
+    height: 18px;
+    text-align: left;
+    width: 100%;
+}
+#menuI ul.submenubiblio li a {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #555555;
+    margin-left: 20px;
+    width: 90% !important;
+}
+#menuI ul.submenubiblio li a:hover {
+    text-decoration: underline;
+}
+#menuI ul.submenubiblio {
+    background-color: #F2F2EA;
+    border-bottom: 1px solid #DFDFD8;
+    border-left: 1px solid #DFDFD8;
+    border-right: 1px solid #DFDFD8;
+    float: left;
+    line-height: 18px;
+    padding: 20px 0 !important;
+    width: 275px;
+}
+#menuI .navegacion li:hover .submenubiblio {
+    display: block;
+}
+#menuI .submenubiblio a:hover {
+    background-color: #F2F2EA;
+}
+#menuI .navegacion li ul {
+    display: none;
+    left: 0;
+    padding: 8px 0 16px;
+    position: absolute;
+    top: 100%;
+}
+#menuI .navegacion li > ul {
+    left: auto;
+    top: auto;
+}
+#menuI .navegacion li li {
+    border: 0 none;
+    display: block;
+    float: left;
+}
+#menuI .navegacion li:hover ul, li.over ul {
+    display: block;
+}
+#navmenu a:hover {
+    text-decoration: none;
+}
+
+#navmenu li a {
+    text-decoration: none;
+}
+
+#menu ol, #menu ul,
+#menuI ol, #menuI ul {
+    list-style: none outside none;
+}
+
+#menu div, #menu p, #menu ul,
+#menuI div, #menuI p, #menuI ul  {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#menu, #menuI {
+    background: url("http://www.march.es/img/menug_background.png") repeat scroll 0 0 transparent;
+    height: 25px;
+    position: relative;
+    z-index: 998;
+}
+
+#menu a,
+#menuI a {
+    display: block;
+}
+#menu ul li,
+#menuI ul li {
+    float: left;
+}
+
+#menu li.nuevo {
+    background: url("http://www.march.es/img/nuevo.png") no-repeat scroll right 4px transparent;
+    padding-right: 42px;
+    margin: 0px;
+}
+
+#menu .navegacion ul.submenu {
+    background-color: #F2F2EA;
+    border-bottom: 1px solid #DFDFD8;
+    border-left: 1px solid #DFDFD8;
+    border-right: 1px solid #DFDFD8;
+    float: left;
+    line-height: 15px;
+    padding: 20px 0;
+    position: absolute;
+    width: 180px;
+    z-index: 998;
+}
+#menu .navegacion .submenu li {
+    clear: both;
+    margin-bottom: 5px;
+}
+#menu .navegacion .submenu li a {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #151515;
+    height: 100% !important;
+    margin-left: 20px;
+    /*width: 90% !important;*//* this seems to break stuff... -avessey*/
+}
+
+.ie7 #menu .navegacion .submenu li a { 
+        color:#555; 
+        margin-left:20px; 
+        height:100%!important;  /* Con este important se fuerza la altura de los submenus */
+        background:none!important; /* Necesario para reemplazar el background por defecto  */
+        width:140px!important;/* needed here, though... breaks 'nuevo'/new background image...  Anyway -avessey */ 
+}
+
+#menu .navegacion .submenu li a:hover {
+    text-decoration: underline;
+}
+#menu .navegacion li:hover .submenu {
+    display: block;
+}
+#menu li.submbiblioresalt {
+    background-color: #F2F2EA;
+    color: #555555;
+    cursor: default;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+    width: 250px !important;
+}
+#menu .textnormsubmbiblio {
+    background-color: #F2F2EA;
+    margin-top: 10px;
+}
+#menu ul ul li {
+    font: 12px Arial,Helvetica,sans-serif;
+}
+#menu .submenu a:hover {
+    background-color: #F2F2EA;
+    color: #555555;
+}
+#menu a:hover {
+    background-color: #F2F2EA;
+}
+#menu .navegacion li ul {
+    display: none;
+    left: 0;
+    padding: 8px 0 16px;
+    position: absolute;
+    top: 100%;
+}
+#menu .navegacion li > ul {
+    left: auto;
+    top: auto;
+}
+#menu .navegacion li li {
+    border: 0 none;
+    display: block;
+    float: left;
+}
+#menu .navegacion li:hover ul, li.over ul {
+    display: block;
+}
+#navmenu .lineamenu {
+    background-color: #DFDFD8;
+    height: 1px;
+    margin: 5px 20px;
+    width: 140px !important;
+}
+#navmenu li.submmusicresalt {
+    color: #555555;
+    cursor: default;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 125px;
+}
+#navmenu li .seleccionado span {
+    visibility: hidden;
+}
+#navmenu li div.seleccionado, #navmenu li p.seleccionado {
+    background-repeat: no-repeat;
+    height: 25px;
+}
+#navmenu li p, #navmenu li .menutext {
+    height: 25px;
+}
+
+#navmenu li p {
+    text-align: center;
+}
+
+#navmenu li.inicio p {
+    background: url("http://www.march.es/img/menug_inicio.png") no-repeat scroll left top transparent;
+    width: 73px;
+}
+#navmenu li.inicio:hover a {
+    background: url("http://www.march.es/img/menug_inicio_hover.png") no-repeat scroll left top transparent;
+    height: 25px;
+}
+
+#menuI #navmenu li.inicio p {
+    background: url("http://www.march.es/img/ingles/menug_inicio.png") no-repeat scroll left top transparent;
+}
+#menuI #navmenu li.inicio:hover a {
+    background: url("http://www.march.es/img/ingles/menug_inicio_hover.png") no-repeat scroll left top transparent;
+}
+
+#navmenu li.arte p {
+    background: url("http://www.march.es/img/menug_arte.png") no-repeat scroll left top transparent;
+    width: 66px;
+}
+#navmenu li.arte:hover a {
+    background: url("http://www.march.es/img/menug_arte_hover.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+}
+
+#menuI #navmenu li.arte p {
+    background: url("http://www.march.es/img/ingles/menug_arte.png") no-repeat scroll left top transparent;
+}
+#menuI #navmenu li.arte:hover a {
+    background: url("http://www.march.es/img/ingles/menug_arte_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#navmenu li.musica p {
+    background: url("http://www.march.es/img/menug_musica.png") no-repeat scroll left top transparent;
+    width: 84px;
+}
+#navmenu li.musica:hover a {
+    background: url("http://www.march.es/img/menug_musica_hover.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+}
+
+#menuI li.musica p {
+    background: url("http://www.march.es/img/ingles/menug_musica.png") no-repeat scroll left top transparent;
+}
+#menuI li.musica:hover a {
+    background: url("http://www.march.es/img/ingles/menug_musica_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+/*#navmenu .musica .submenu li {
+    width: 160px;
+}*//* Not needed? -avessey*/
+#navmenu li.conferencias p {
+    background: url("http://www.march.es/img/menug_confe.png") no-repeat scroll left top transparent;
+    width: 123px;
+}
+#navmenu li.conferencias:hover a {
+    background: url("http://www.march.es/img/menug_confe_hover.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+}
+
+#menuI #navmenu li.conferencias p {
+    background: url("http://www.march.es/img/ingles/menug_confe.png") no-repeat scroll left top transparent;
+}
+#menuI #navmenu li.conferencias:hover a {
+    background: url("http://www.march.es/img/ingles/menug_confe_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+
+#navmenu li.cienciassociales p {
+    background: url("http://www.march.es/img/menug_sociales.png") no-repeat scroll left top transparent;
+    width: 154px;
+}
+#navmenu li.cienciassociales:hover a {
+    background: url("http://www.march.es/img/menug_sociales_hover.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+}
+
+#menuI #navmenu li.cienciassociales p {
+    background: url("http://www.march.es/img/ingles/menug_sociales.png") no-repeat scroll left top transparent;
+}
+#menuI #navmenu li.cienciassociales:hover a {
+    background: url("http://www.march.es/img/ingles/menug_sociales_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#navmenu li.biblioteca p {
+    background: url("http://www.march.es/img/menug_biblioteca.png") no-repeat scroll left top transparent;
+    width: 102px;
+}
+#navmenu li.biblioteca:hover a {
+    background: url("http://www.march.es/img/menug_biblioteca_hover.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+}
+
+#menuI #navmenu li.biblioteca p {
+    background: url("http://www.march.es/img/ingles/menug_biblioteca.png") no-repeat scroll left top transparent;
+    width: 102px;
+}
+#menuI #navmenu li.biblioteca:hover a {
+    background: url("http://www.march.es/img/ingles/menug_biblioteca_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#navmenu li.biblioteca p a span, #navmenu li.biblioteca .menutext span, #navmenu li.cienciassociales p a span, #navmenu li.cienciassociales .menutext span, #navmenu li.conferencias p a span, #navmenu li.conferencias .menutext span, #navmenu li.musica p a span, #navmenu li.musica .menutext span, #navmenu li.arte p a span, #navmenu li.arte .menutext span, #navmenu li.inicio p a span, #navmenu li.inicio .menutext span {
+    position: relative;
+    z-index: -1;
+}
+#navemenu li p, #navemenu li .menutext {
+    border: 1px solid red;
+    height: 25px !important;
 }

@@ -184,7 +184,7 @@
 
       <?php if ($logo): ?>
       	<div class="<?php if ($site_name || $site_slogan) { print ' with-sitename-slogan'; } ?>" id="sitelogo" >
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <a href="http://www.march.es" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         </div>     
       <?php endif; ?>
 
@@ -288,7 +288,20 @@
 </div><!-- /#headerandfeature -->
 
 <div id="sitecontent-wrapper"><div id="sitecontent">
-<?php print $breadcrumb; ?>
+
+<?php if($breadcrumb || $breadcrumb_right): ?>
+<div id="breadcrumb" class="bcl<?php print (int)(bool) $breadcrumb;?> bcr<?php print (int)(bool) $breadcrumb_right;?>">
+  <div class="section clearfix">
+    <div class="column BreadcrumbLeft">
+      <?php print $breadcrumb; ?>
+    </div>
+    <div class="column BreadcrumbRight">
+      <?php print $breadcrumb_right; ?>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
  <?php if($feature || $feature_right): ?>
     <div id="feature-wrapper" class="fl<?php print (int)(bool) $feature;?> fr<?php print (int)(bool) $feature_right;?>">
     <div id="feature"><div class="section clearfix">
@@ -472,73 +485,33 @@
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#bottomcontent-wrapper -->
     <?php endif; ?>
- 
-    <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer || $secondary_links || $sidebar_footer): ?>
-      <div style="clear:both"></div>
-<div id="footer-wrapper"><div id="footer" class="clearfix<?php if ($sidebar_footer) { print ' with-sidebar-footer'; } ?>">
-      <div id="footer-content" class="column"><div class="section">
-      
- <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third): ?>
-    <div style="clear:both"></div>
- 
-    <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third + (bool) $footer_preface_fourth; ?> "><div class="section">
-          <?php if($footer_preface_first): ?>
-          <div class="column FooterPrefaceFirst">
-            <?php print $footer_preface_first; ?>
-          </div>
-          <?php endif; ?>
-          <?php if($footer_preface_second): ?>
-          <div class="column FooterPrefaceSecond">
-            <?php print $footer_preface_second; ?>
-          </div>
-          <?php endif; ?>
-          <?php if($footer_preface_third): ?>
-          <div class="column FooterPrefaceThird">
-            <?php print $footer_preface_third; ?>
-          </div>
-          <?php endif; ?> 
-          <?php if($footer_preface_fourth): ?>
-          <div class="column FooterPrefaceFourth">
-            <?php print $footer_preface_fourth; ?>
-          </div>          
-          <?php endif; ?>        
-      <div style="clear:both"></div>
-    </div></div> <!-- /.section, /#preface-wrapper -->
-    <?php endif; ?>
-      
-      
- <?php if($footer || $sidebar_footer): ?>
-    <div style="clear:both"></div>
-    <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?> <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer_preface_fourth) { print ' with-footer-preface'; } ?>"><div class="section">
-          <div class="column Footer">
-            <?php print $footer; ?>
-          </div>
-      <div style="clear:both"></div>
-    </div></div> <!-- /.section, /#content-bottom-wrapper -->
- <?php endif; ?>  
-  </div></div> <!-- /.section, /#footer-content -->
 
-          <?php if($sidebar_footer): ?>
-          <div class="column SidebarFooter">
-          <div class="section clearfix">
-          <div class="footersidebar">
-        <?php print $sidebar_footer; ?>  
-          </div></div></div>
-          <?php endif; ?>
-
- </div></div> <!-- /#footer, /#footer-wrapper -->
-    <?php endif; ?>
 </div></div></div><!-- /#bottom, /.section, /#bottom-wrapper  -->
-  </div></div> <!-- /#page, /#page-wrapper -->
+
+<div id="footer-wrapper"><div id="footer" class="clearfix">
+  <?php if($footer || $sidebar_footer): ?>
+    <div class="column section">
+      <?php print $footer; ?>
+    </div>
+  <?php endif; ?>
+</div></div>
+
+
+  </div></div></div> <!-- /#page, /#page-wrapper -->
+
+
+
 <?php if($page_closure || $footer_message): ?>
 <div id="closure-wrapper">
- <div id="closure">
-  <?php print $page_closure; ?>
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>
- </div>
+  <div id="closure">
+    <?php print $page_closure; ?>
+          <?php if ($footer_message): ?>
+            <div id="footer-message"><?php print $footer_message; ?></div>
+    <?php endif; ?>
+  </div>
 </div>
+
+
 <?php endif; ?>
   <?php print $closure; ?>
 </body>

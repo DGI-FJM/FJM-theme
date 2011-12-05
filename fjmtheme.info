@@ -48,7 +48,7 @@ stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
-stylesheets[all][]   = css/superfish.css
+stylesheets[all][]   = css/superfishmenus.css
 stylesheets[all][]   = css/islandora.css
 stylesheets[all][]   = css/jcarousel.css
 stylesheets[print][] = css/print.css
@@ -61,12 +61,8 @@ conditional-stylesheets[if lte IE 7][all][] = css/ie7.css
 conditional-stylesheets[if IE][all][]       = css/ie.css
 
   ; Optionally add some JavaScripts to your theme.
-; scripts[] = js/script.js
 scripts[] = js/jquery_example/jquery.example.min.js
-scripts[] = js/searchtext.js  
-scripts[] = js/superfish.js
-scripts[] = js/hoverIntent.js
-;scripts[if IE 6] = js/jquery.pngFix.js
+scripts[] = js/searchtext.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.
@@ -87,6 +83,7 @@ regions[header_second]  = Header Right
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[navbar_right]   = Navigation bar right
+regions[breadcrumb_right] = Breadcrumb right
 regions[feature] 	    = Feature
 regions[feature_right] 	= Feature right
 regions[preface_first]  = Preface 1
@@ -111,11 +108,6 @@ regions[bottom_third]   = Bottom 3
 regions[bottom_fourth]  = Bottom 4
 regions[bottom_fifth]   = Bottom 5
 regions[bottom_sixth]   = Bottom 6
-;regions[sidebar_footer] = Footer sidebar
-;regions[footer_preface_first] = Footer 1
-;regions[footer_preface_second] = Footer 2
-;regions[footer_preface_third] = Footer 3
-;regions[footer_preface_fourth] = Footer 4
 regions[footer] 				= Footer bottom
 regions[page_closure]   = Page closure
 

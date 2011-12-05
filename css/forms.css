@@ -233,12 +233,6 @@ clear: right;
 }
 
 
-/* ------------------------------------------
-CSS3 GITHUB Buttons for Drupal 6
-Licensed under Unlicense 
------------------------------------------- */
-
-
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
 .archivolink a { 
@@ -282,7 +276,7 @@ Licensed under Unlicense
   opacity: 0.85;
     }
 
-
+a.button,
 a.reposubmission,
 .book_add_child a,
 .book_add_child a:link,
@@ -335,6 +329,7 @@ a.reposubmission,
     margin-top: 0.2em;
     }
     
+a.button, 
 a.reposubmission,
 .book_add_child a,
 .book_add_child a:link,
@@ -395,6 +390,9 @@ line-height: 1.25em;
     background-image: linear-gradient(#DA5D57, #B43731);
 }
 
+a.button:hover,
+a.button:focus,
+a.button:active,
 a.reposubmission:hover,
 a.reposubmission:focus,
 a.reposubmission:active,
@@ -461,7 +459,10 @@ a.reposubmission:active,
     background-image: linear-gradient(#B43731, #DA5D57);
 }
 
-
+a.publicationsubmit:active,
+a.publicationsubmit.active,
+a.button:active,
+a.button.active,
 a.reposubmission:active,
 a.reposubmission.active,
 .book_add_child a:active,
@@ -525,7 +526,6 @@ div.teaser-button-wrapper {
 
 /* ............................................................................................................. Icons */
 
-
 #islandora-solr-simple-search-form .form-submit,
 #search-form .form-submit { 
 background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
@@ -534,6 +534,16 @@ background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f2f2f2,
 background-image: url(../images/search-darkgrey.png),linear-gradient(#f2f2f2, #dddddd);
 background-position: 0;
 padding-left: 20px;
+}
+
+.ie6 #islandora-solr-simple-search-form .form-submit,
+.ie6 #search-form .form-submit,
+.ie7 #islandora-solr-simple-search-form .form-submit,
+.ie7 #search-form .form-submit,
+.ie8 #islandora-solr-simple-search-form .form-submit,
+.ie8 #search-form .form-submit { 
+padding-left: 12px;
+padding-right: 12px;
 }
 
 #islandora-solr-simple-search-form .form-submit:hover,
@@ -554,6 +564,28 @@ padding-left: 20px;
     padding-left: 20px;
 }
 
+.ie6 #islandora-solr-simple-search-form .form-submit:hover,
+.ie6 #islandora-solr-simple-search-form .form-submit:focus,
+.ie6 #islandora-solr-simple-search-form .form-submit:active,
+.ie6 #search-form .form-submit:hover,
+.ie6 #search-form .form-submit:focus,
+.ie6 #search-form .form-submit:active,
+.ie7 #islandora-solr-simple-search-form .form-submit:hover,
+.ie7 #islandora-solr-simple-search-form .form-submit:focus,
+.ie7 #islandora-solr-simple-search-form .form-submit:active,
+.ie7 #search-form .form-submit:hover,
+.ie7 #search-form .form-submit:focus,
+.ie7 #search-form .form-submit:active,
+.ie8 #islandora-solr-simple-search-form .form-submit:hover,
+.ie8 #islandora-solr-simple-search-form .form-submit:focus,
+.ie8 #islandora-solr-simple-search-form .form-submit:active,
+.ie8 #search-form .form-submit:hover,
+.ie8 #search-form .form-submit:focus,
+.ie8 #search-form .form-submit:active {
+padding-left: 12px;
+padding-right: 12px;
+}
+
 #islandora-solr-simple-search-form .form-submit:active,
 #islandora-solr-simple-search-form .form-submit.active,
 #search-form .form-submit:active,
@@ -570,7 +602,22 @@ padding-left: 20px;
     padding-left: 20px;
 }
 
-/* ------------------------------------------------------------------------------------------------------------- form-submit GROUPS */
+.ie6 #islandora-solr-simple-search-form .form-submit:active,
+.ie6 #islandora-solr-simple-search-form .form-submit.active,
+.ie6 #search-form .form-submit:active,
+.ie6 #search-form .form-submit.active,
+.ie7 #islandora-solr-simple-search-form .form-submit:active,
+.ie7 #islandora-solr-simple-search-form .form-submit.active,
+.ie7 #search-form .form-submit:active,
+.ie7 #search-form .form-submit.active,
+.ie8 #islandora-solr-simple-search-form .form-submit:active,
+.ie8 #islandora-solr-simple-search-form .form-submit.active,
+.ie8 #search-form .form-submit:active,
+.ie8 #search-form .form-submit.active {
+padding-left: 12px;
+padding-right: 12px;
+}
+
 
 /* ............................................................................................................. Standard */
 

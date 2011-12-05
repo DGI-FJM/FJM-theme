@@ -140,8 +140,7 @@ div.admin-panel h3,
 #content-top-wrapper .block h2.title,
 .region-content-bottom  .block h2.title,
 #content-bottom-wrapper .block h2.title {
-padding: 0 10px 8px 0px;
-border-bottom: 1px dotted #dededf;
+padding: 0 10px 0px 0px;
 }
 
 #feature .block h2.title {
@@ -185,12 +184,7 @@ padding-left: 10px;
 
 /* Highlight Blocks */
 .region-highlight .block {
-background-color:#F4F4F4;
-border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
-border-style:solid;
-border-width:1px;
-margin:0 0 1.5em;
-padding: 0.1em 1.2em 0.5em;
+  margin-bottom: 0.5em;
 }
 
 div.admin .left {

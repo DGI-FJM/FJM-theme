@@ -41,7 +41,7 @@ body {
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
-#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure, #sitecontent, #feature .section, .breadcrumb {
+#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure, #sitecontent, #feature .section, #breadcrumb {
 margin-left:auto;
 margin-right:auto;
 width:960px;
@@ -112,20 +112,20 @@ color: #fff;
 }
 
 .sidebar-first #content {
-  width: 720px;
-  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first. */
+  width: 680px;
+  margin-left: 280px; /* LTR */ /* The width of .region-sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .sidebar-second #content {
-  width: 720px;
+  width: 680px;
   margin-left: 0; /* LTR */
   margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .two-sidebars #content {
-  width: 480px;
-  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first */
+  width: 440px;
+  margin-left: 280px; /* LTR */ /* The width of .region-sidebar-first */
   margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
@@ -193,7 +193,7 @@ padding-right: 10px;
 
 #navigation li /* A simple method to get navigation links to appear in one line. */ {
   float: left; /* LTR */
-  padding: 0 10px 0 0; /* LTR */
+  padding: 0; /* LTR */
 }
 
 
@@ -258,17 +258,59 @@ margin: 0;
 }
 
 
+/* Breadcrumb Bar + Breadcrumb Right
+-------------------------------------------------------------- */
 
+#breadcrumb .column.BreadcrumbLeft {
+float: left;
+}
+
+#breadcrumb .column.BreadcrumbRight {
+text-align: right;
+float: right;
+}
+
+#breadcrumb .column.BreadcrumbRight .block {
+float: right;
+}
+
+#breadcrumb.bcl1.bcr1 .BreadcrumbLeft,
+#breadcrumb.bcl2.bcr1 .BreadcrumbLeft,
+#breadcrumb.bcl1.bcr2 .BreadcrumbLeft,
+#breadcrumb.bcl2.bcr2 .BreadcrumbLeft {
+width: 75%;
+}
+
+#breadcrumb.bcl1.bcr1 .BreadcrumbRight,
+#breadcrumb.bcl2.bcr1 .BreadcrumbRight,
+#breadcrumb.bcl1.bcr2 .BreadcrumbRight,
+#breadcrumb.bcl2.bcr2 .BreadcrumbRight {
+width: 25%;
+}
+
+#breadcrumb.bc1.nbr0 .column {
+width: 100%;
+}
+
+#breadcrumb .block {
+padding-left:0;
+margin-bottom: 0;
+}
+
+.BreadcrumbRight .block {
+  padding-right: 5px;
+}
 
 /*
  * First sidebar
  */
 .region-sidebar-first {
   float: left; /* LTR */
-  width: 240px;
+  width: 280px;
   margin-left: 0; /* LTR */
-  margin-right: -240px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  margin-right: -280px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+  overflow: visible;
 }
 
 .region-sidebar-first .section {
@@ -281,8 +323,8 @@ padding: 0 10px 0 10px;
  */
 .region-sidebar-second {
   float: left; /* LTR */
-  width: 240px;
-  margin-left: 720px; /* LTR */ /* Width of content + sidebar-first. */
+  width: 280px;
+  margin-left: 680px; /* LTR */ /* Width of content + sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
@@ -596,23 +638,17 @@ margin: 0 auto;
 float: left;
 }
 
-#content-top-wrapper.in1 .column {
+#content-top-wrapper.in1 .ContentTop1,
+#content-top-wrapper.in1 .ContentTop2 {
 width: 100%;
 }
 
-#content-top-wrapper.in2 .column {
-width: 50%;
+#content-top-wrapper.in2 .ContentTop1 {
+width: 60%;
 }
 
-#content-top-wrapper .block {
-}
-
-#content-top-wrapper.in2 .column.ContentTop2 .block {
-padding-right: 0px;
-}
-
-#content-top-wrapper.in2 .column.ContentTop1 .block {
-padding-left: 0px;
+#content-top-wrapper.in2 .ContentTop2 {
+width: 40%;
 }
 
 /*
@@ -888,6 +924,7 @@ z-index:99;
   margin-left: 0; /* LTR */
   margin-right: -350px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+  overflow: visible;
 }
 
 

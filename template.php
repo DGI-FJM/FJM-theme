@@ -107,6 +107,11 @@ function fjmtheme_preprocess(&$vars, $hook) {
 }
 // */
 
+//function fjmtheme_preprocess_islandora_fjm_solr_result(&$vars, $attributes = array()) {
+//  dpm ($vars);
+//  $toReturn[] = theme_table(NULL, $rows, array('class' => 'islandora_solr_search_results_object'));
+//}
+
 /**
  * Override or insert variables into the page templates.
  *

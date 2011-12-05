@@ -315,17 +315,22 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#content-top-wrapper.in2 .column {
-width: 45.65%;
+
+
+#content-top-wrapper.in2 .ContentTop1 {
+width: 37.65%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#content-top-wrapper .block {
-padding-left:0;
-padding-right:0;
+#content-top-wrapper.in2 .ContentTop2 {
+width: 57.65%;
+margin-right: 1%;
+margin-left: 1%;
+padding-top: 5px;
+padding-bottom: 5px;
 }
 
 
