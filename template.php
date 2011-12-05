@@ -64,7 +64,6 @@
 
 
 // Optionally add CSS files for the user-selected color design.
-
 $design = theme_get_setting('fjm_design');
 switch ($design) {
   case '0':
@@ -72,12 +71,11 @@ switch ($design) {
     break;
   case '1':
     drupal_add_css(drupal_get_path('theme', 'fjmtheme') . '/css/custom/atmusica.css', 'theme', 'all');
-    break;    
+    break;
   case '2':
     drupal_add_css(drupal_get_path('theme', 'fjmtheme') . '/css/custom/ceacs.css', 'theme', 'all');
     break;
 }
-
 
 
 /**
@@ -120,11 +118,16 @@ function fjmtheme_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
 function fjmtheme_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+
+  // Optionally add CSS files for the user-selected color design.
+  $design = theme_get_setting('fjm_design');
+  $vars['design'] = $design;
+
+//dsm($design);
 }
-// */
+
 
 /**
  * Override or insert variables into the node templates.
@@ -215,3 +218,4 @@ function phptemplate_file($element){
   $element['#size'] = 40;
   return theme_file($element);
 }
+

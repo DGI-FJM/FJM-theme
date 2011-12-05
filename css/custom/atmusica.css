@@ -1,0 +1,277 @@
+/* Feature */
+
+#feature-wrapper {
+padding-top: 0px;
+}
+
+#feature-wrapper .column {
+float: left;
+}
+
+/* custom feature widths */
+
+#feature-wrapper.fl1.fr1 .FeatureMain,
+#feature-wrapper.fl2.fr1 .FeatureMain,
+#feature-wrapper.fl1.fr2 .FeatureMain,
+#feature-wrapper.fl2.fr2 .FeatureMain {
+width: 35%;
+}
+
+#feature-wrapper.fl1.fr1 .FeatureRight,
+#feature-wrapper.fl2.fr1 .FeatureRight
+#feature-wrapper.fl1.fr2 .FeatureRight,
+#feature-wrapper.fl2.fr2 .FeatureRight {
+width: 65%;
+}
+
+.ie6 #feature-wrapper.fl1.fr1 .FeatureMain,
+.ie6 #feature-wrapper.fl2.fr1 .FeatureMain,
+.ie6 #feature-wrapper.fl3.fr1 .FeatureMain,
+.ie6 #feature-wrapper.fl4.fr1 .FeatureMain,
+.ie6 #feature-wrapper.fl1.fr2 .FeatureMain,
+.ie6 #feature-wrapper.fl2.fr2 .FeatureMain,
+.ie6 #feature-wrapper.fl3.fr2 .FeatureMain,
+.ie6 #feature-wrapper.fl4.fr2 .FeatureMain{
+width: 32.65%;
+margin-right: 1%;
+margin-left: 1%;
+}
+
+.ie6 #feature-wrapper.fl1.fr1 .FeatureRight,
+.ie6 #feature-wrapper.fl2.fr1 .FeatureRight,
+.ie6 #feature-wrapper.fl3.fr1 .FeatureRight,
+.ie6 #feature-wrapper.fl4.fr1 .FeatureRight,
+.ie6 #feature-wrapper.fl1.fr2 .FeatureRight,
+.ie6 #feature-wrapper.fl2.fr2 .FeatureRight,
+.ie6 #feature-wrapper.fl3.fr2 .FeatureRight,
+.ie6 #feature-wrapper.fl4.fr2 .FeatureRight {
+width: 61.65%;
+margin-right: 1%;
+margin-left: 1%;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.views_slideshow_main .views-content-title {
+  font-size: 1.85em;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin-top: 0em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+  margin-bottom: 0.3em;
+  font-family: Times New Roman,Times,serif;
+}
+
+.navegaelarchivo-view .views-slideshow-controls-top {
+    width: 300px;
+    float: left;
+}
+
+.navegaelarchivo-view .views-slideshow-controls-top .views-content-title {
+  padding: 7px 20px 7px 60px;
+  width: 220px;
+  display: block;
+  color: #000;  
+  cursor: pointer;
+  border-top: 1px solid #d7d7d7;
+}
+
+#views_slideshow_thumbnailhover_div_breakout_teaser_navegaelarchivo-block_1_0 .views-content-title {
+  padding-left: 40px;
+  width: 240px;  
+  font-weight: bold;
+  background: url(../../images/musicnote-icon.png) no-repeat 5px 3px;
+}
+
+#views_slideshow_thumbnailhover_div_breakout_teaser_navegaelarchivo-block_1_0 .views-content-title:hover,
+#views_slideshow_thumbnailhover_div_breakout_teaser_navegaelarchivo-block_1_0 .views-content-title:active,
+#views_slideshow_thumbnailhover_div_breakout_teaser_navegaelarchivo-block_1_0.activeSlide .views-content-title {
+  background: url(../../images/musicnote-icon-hv.png) no-repeat 5px 3px #eaede6;
+}
+
+
+.navegaelarchivo-view .views-slideshow-controls-top .views-content-title:hover,
+.navegaelarchivo-view .views-slideshow-controls-top .views-content-title:active,
+.navegaelarchivo-view .views-slideshow-controls-top .activeSlide .views-content-title {
+  background-color: #eaede6;
+  color: #000;
+  text-decoration: none;
+}
+
+.navegaelarchivo-view .views_slideshow_main {
+  position: absolute;
+  left: 300px;
+  width: 263px;  
+  top: 0;
+  border-left: 1px solid #bebcbc;
+  padding: 0px 18px;
+}
+
+.navegaelarchivo-view .views_slideshow_main h2 {
+  margin-top: 1px;
+}
+
+.navegaelarchivo-view {
+  position: relative;
+}
+
+.front #feature-wrapper {
+	background: url(../../images/brownborder.png) no-repeat bottom center;
+	padding-bottom: 4px;
+}
+
+.front #feature .section {
+	background: url(../../images/clamorlogo-bg.png) no-repeat bottom left;
+}
+
+.front #feature .block {
+    margin-bottom: 0em;
+    margin-top: 0px;
+}
+
+.front .region-sidebar-first {
+	background: url(../../images/greygradient.png) repeat-x 0px 0px; 
+    margin-left: 15px;
+    margin-right: -346px;
+    width: 346px;
+}
+
+.front .region-sidebar-first .section {
+    margin: 10px;
+    padding: 0 10px 0 0px;
+}
+
+.front.sidebar-first #content {
+    margin-left: 350px;
+    margin-right: -960px;
+    width: 610px;
+}
+
+.navegaelarchivo-view .view-header h2 {
+	padding-left: 40px;
+}
+
+#block-views-Clamor-block_2 {
+  margin-bottom: 0;
+}
+
+.clamor-facet-logo {
+  text-align: center;
+}
+
+.clamor-facet-logo img {
+  vertical-align: bottom;
+}
+
+/* composer display */ 
+
+.islandora_fjm_person .performance_table {
+  float: left;
+  width: 100%;
+}
+
+.islandora_fjm_person .leftcolumn {
+  float: left;
+  width: 27%;
+}
+
+.islandora_fjm_person .rightcolumn {
+  float: right;
+  width: 71%;
+}
+
+.islandora_fjm_person .image_strip_group {
+  float: left;
+  background-color: #eee;
+  border: 1px solid #979797;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+
+.islandora_fjm_person .image_strip_group img {
+  display: block;
+  vertical-align: bottom;
+  width: 220px;
+}
+
+.islandora_fjm_person .image_strip{
+  margin: 0;
+}
+
+.islandora_fjm_concert .image_strip_group {
+  float: left;
+  background-color: #eee;
+  border: 1px solid #979797;
+  width: 380px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.islandora_fjm_concert .jcarousel-container-horizontal {
+    height: 71px;
+    margin: auto;
+    padding: 10px 40px 0px 40px;
+    width: 220px;
+}
+
+.islandora_fjm_concert .jcarousel-clip-horizontal {
+    width: 220px;
+}
+
+.islandora_fjm_concert .islandora_fjm_photo img  {
+  display: block;
+  vertical-align: bottom;
+  width: 380px;
+}
+
+.islandora_fjm_concert .jcarousel-item {
+  cursor: pointer;
+  height: 70px;
+  width: 100px;
+}
+
+.islandora_fjm_concert .jcarousel-prev-horizontal  {
+  top: 30px;
+}
+
+.islandora_fjm_concert .jcarousel-next-horizontal  {
+  top: 29px;
+}
+
+.section-fedora .drupal-tabs {
+    margin-top: 0em;
+}
+
+.section-fedora h1 {
+    margin-bottom: 0.5em;
+}
+
+.atm_concert_mid .leftcolumn h3 {
+  background: url(../../images/pdficon.png) no-repeat 0 0 transparent;
+  padding-left: 40px;
+  height: 30px;
+}
+
+.islandora_fjm_concert .leftcolumn { 
+  float : left; 
+  width : 44%;
+}
+.islandora_fjm_concert .rightcolumn { 
+  float : right; 
+  width : 54%;
+}
+
+.atm_concert_bottom .leftcolumn,
+.atm_concert_bottom .rightcolumn {
+  background: url(../../images/block-gradient.png) repeat-x 0 0 transparent;
+}
+
+.atm_concert_bottom .leftcolumn .block,
+.atm_concert_bottom .rightcolumn .block {
+  padding: 0 20px 0 20px;
+}
+
