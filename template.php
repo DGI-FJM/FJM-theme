@@ -235,10 +235,11 @@ function fjmtheme_scholar_search_results_table(array $element) {
   /* '#header' => array(theme('table_select_header_cell'), $title), */
 
   /* set caption */
+
   //$element['caption'] = $element['#header'][1];
   
   //$element['#header'][1] = t('Title') . ', ' . t('Bibliography');
-  //dsm($element);
+
 
   $rows = array();
   foreach (element_children($element['rows']) as $child) {
@@ -257,8 +258,7 @@ function fjmtheme_scholar_search_results_table(array $element) {
     );
   }
   $attributes = isset($element['#id']) ? array('id' => $element['#id']) : NULL;
-  /* dsm($element); */
-  /* dsm($rows); */
-  //dsm($rows);
+
   return '<div class="scholar-search-results">' . theme_table($element['#header'], $rows, $attributes, $element['#caption'] ) . '</div>';
+
 }
