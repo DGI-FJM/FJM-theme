@@ -1,0 +1,1 @@
+jQuery(document).ready(function() {  // add scripts here  //$("<div class='ceacs-recentdocs'></div>").appendTo("#content-area");  //$("ul.legend").clone().prependTo("div.ceacs-recentdocs");});

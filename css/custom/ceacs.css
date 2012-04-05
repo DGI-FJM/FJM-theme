@@ -207,13 +207,37 @@ table.ceacs-recentdocs tfoot td {
     margin-bottom: 0;
     padding: 2px 5px 5px;
     list-style: none;
-    float: left;
+   /* float: left; */
+    width: auto;
+    display: inline-block;
+}
+
+
+
+* html ul.legend li { /* for IE6 */
+  display : inline;
+}
+
+*+html ul.legend li { /* for IE7 */
+  display : inline;
+}
+
+.ceacs-recentdocs ul
+{
+
 }
 
 .ceacs-recentdocs ul.type {
     float: left;
     padding-top: 3px;
+
 }
+.ceacs-recentdocs tfoot
+{
+
+}
+
+
 
 .ceacs-recentdocs ul.access {
     float: right;
@@ -445,7 +469,15 @@ ul.quicktabs-style-nostyle, ul.primary {
 
 
 
+
+
+
 /* Customizations Danny Joris */
+
+
+
+
+
 
 
 .ceacs-banner
@@ -453,6 +485,721 @@ ul.quicktabs-style-nostyle, ul.primary {
   /*float: left;*/
   width: 931px;
   height: 35px;
-  margin: 0px 0px 0px 15px;
+  margin: 5px 0px 5px 15px;
   background: url('../../images/ceacs-banner.png') center top no-repeat transparent;
 }
+
+.front .ceacs-banner
+{
+  /*float: left;*/
+  width: 931px;
+  height: 35px;
+  margin: 5px 0px 5px 15px;
+  /* background: url('../../images/ceacs-banner-front.png') center top no-repeat transparent; */
+  display: none;
+}
+
+
+/* Scholar search block */
+
+#block-block-3,
+#block-block-4
+{
+  float: left;
+  padding: 10px 15px;
+  background-color: #f6f3e8;
+  width: 555px;
+}
+
+.not-front #block-block-3,
+.not-front #block-block-4
+{
+  width: 920px;
+  padding: 0px 15px 5px;
+}
+
+#block-block-3 .search-title,
+#block-block-4 .search-title
+{
+  display: none;
+}
+
+.search-title
+{
+  border: medium none;
+  color: #00547A;
+  font-family: Trebuchet MS,helvetica,arial,sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0px 0px;
+  padding: 0;
+}
+
+.not-front #scholar-search-form
+{
+  float: left;
+  padding: 0px 15px 5px;
+  background-color: #f6f3e8;
+  width: 665px;
+}
+
+#scholar-search-form .form-item
+{
+  margin: 0px 0px 0px 0px;
+}
+
+
+.scholar-export-controls .form-export,
+.scholar-export-controls .save-to-bibliography
+{
+    background-color: #F6F3E8;
+    float: left;
+    padding: 0px 15px 10px;
+    margin: 5px 0px 0px 0px;
+    width: 665px;
+}
+
+.scholar-export-controls
+{
+  float: left;
+  margin: 0px 0px 10px 0px;
+}
+
+.scholar-export-controls .form-export
+{
+    padding: 0px 15px 5px;
+}
+
+.not-front #scholar-search-form .scholar-search-controls
+{
+  /* border-bottom: 1px solid #a7c0c5; */
+  border-bottom: 0px;
+  
+  float: left;
+  /* margin: 0 0 10px; */
+  /* padding: 0 0 10px; */
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+
+#scholar-search-results-form ul.pager
+{
+  visibility: hidden;
+  margin: 0px 0px 0px 0px;
+  height: 0px;
+}
+
+
+.section-fedora #scholar-search-form .scholar-search-controls
+{
+  border-bottom: 0px;
+}
+
+body #content #block-block-4 h2.title,
+body #content #block-block-3 h2.title
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: none;
+
+  color: #00547a;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+
+  text-transform: inherit;
+}
+
+
+#scholar-search-form label,
+.scholar-export-controls h4,
+#islandora-bibliography-form label
+{
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+}
+
+#islandora-bibliography-form h4
+{
+    border: medium none;
+    color: #00547A;
+    font-family: Trebuchet MS,helvetica,arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+.scholar-export-controls h4
+{
+  margin: 10px 0px 5px 0px;
+}
+
+
+/* buttons */
+
+.form-submit,
+.form-submit:hover
+{
+  padding: 6px 16px;
+
+  background: #005869; /* Old browsers */
+  background: -moz-linear-gradient(top,  #005869 0%, #006171 50%, #004a5d 51%, #006374 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005869), color-stop(50%,#006171), color-stop(51%,#004a5d), color-stop(100%,#006374)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #005869 0%,#006171 50%,#004a5d 51%,#006374 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #005869 0%,#006171 50%,#004a5d 51%,#006374 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #005869 0%,#006171 50%,#004a5d 51%,#006374 100%); /* IE10+ */
+  background: linear-gradient(top,  #005869 0%,#006171 50%,#004a5d 51%,#006374 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005869', endColorstr='#006374',GradientType=0 ); /* IE6-9 */
+
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+  border: 0px;
+
+  text-shadow: none;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+}
+
+.form-submit:hover
+{
+  background: #005869; /* Old browsers */
+  background: -moz-linear-gradient(top,  #005869 0%, #27636b 50%, #004a5d 51%, #006374 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005869), color-stop(50%,#27636b), color-stop(51%,#004a5d), color-stop(100%,#006374)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #005869 0%,#27636b 50%,#004a5d 51%,#006374 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #005869 0%,#27636b 50%,#004a5d 51%,#006374 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #005869 0%,#27636b 50%,#004a5d 51%,#006374 100%); /* IE10+ */
+  background: linear-gradient(top,  #005869 0%,#27636b 50%,#004a5d 51%,#006374 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005869', endColorstr='#006374',GradientType=0 ); /* IE6-9 */
+
+
+  opacity: 0.85; 
+  filter: alpha(opacity=85); 
+
+}
+
+#edit-delete.form-submit,
+#edit-delete.form-submit:hover
+{
+  padding: 6px 16px;
+
+background: #b52222; /* Old browsers */
+background: -moz-linear-gradient(top,  #b52222 0%, #ad4747 50%, #910400 51%, #b72a2a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b52222), color-stop(50%,#ad4747), color-stop(51%,#910400), color-stop(100%,#b72a2a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b52222 0%,#ad4747 50%,#910400 51%,#b72a2a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b52222 0%,#ad4747 50%,#910400 51%,#b72a2a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b52222 0%,#ad4747 50%,#910400 51%,#b72a2a 100%); /* IE10+ */
+background: linear-gradient(top,  #b52222 0%,#ad4747 50%,#910400 51%,#b72a2a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52222', endColorstr='#b72a2a',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+  -webkit-border-radius: 3px; 
+     -moz-border-radius: 3px; 
+          border-radius: 3px; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+  border: 0px;
+
+  text-shadow: none;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+}
+
+
+.scholar-export-controls .form-submit
+{
+background: #b19e5e; /* Old browsers */
+background: -moz-linear-gradient(top,  #b19e5e 0%, #af9e66 50%, #9b8b57 51%, #b19e5e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b19e5e), color-stop(50%,#af9e66), color-stop(51%,#9b8b57), color-stop(100%,#b19e5e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b19e5e 0%,#af9e66 50%,#9b8b57 51%,#b19e5e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b19e5e 0%,#af9e66 50%,#9b8b57 51%,#b19e5e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b19e5e 0%,#af9e66 50%,#9b8b57 51%,#b19e5e 100%); /* IE10+ */
+background: linear-gradient(top,  #b19e5e 0%,#af9e66 50%,#9b8b57 51%,#b19e5e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b19e5e', endColorstr='#b19e5e',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+
+#feature-wrapper .form-text,
+#feature-wrapper textarea,
+#main-wrapper .form-text,
+#main-wrapper textarea
+{
+  padding: 6px 5px;
+  /* width: 360px; */
+  width: 400px;
+  font-size: 12px;
+}
+
+
+.front #feature-wrapper .form-text,
+.front #feature-wrapper textarea,
+.front #main-wrapper .form-text,
+.front #main-wrapper textarea
+{
+  width: 300px;
+}
+
+#scholar-search-form .form-item
+{
+  vertical-align: top;
+  padding: 5px;
+  float: left;
+}
+
+#scholar-search-terms div
+{
+  float: left;
+}
+
+#scholar-search-form .form-submit
+{
+  margin: 25px 0px 0px 0px;
+}
+
+.section-fedora #scholar-search-form .form-submit
+{
+  margin: 20px 0px 0px 0px;
+}
+
+#scholar-search-form select
+{
+  margin: 5px 0px 0px 0px;
+  font-size: 11px;
+}
+.scholar-export-controls select
+{
+  font-size: 11px;
+}
+
+#scholar-search-form #scholar-search-terms
+{
+  float: left;
+  width: 100%;
+  /* padding: 0px 0px 5px 0px; */
+  padding: 0px;
+  /* border-bottom: 1px solid #a7c0c5; */
+  
+}
+.section-fedora #scholar-search-form
+{
+  width: 885px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+div.ahah-progress-throbber
+{
+  position: absolute;
+  margin: 20px 0px 0px 0px; 
+  display: none;
+}
+
+
+
+@-webkit-keyframes pulse {
+    from { opacity: 0.75; }
+     50% { opacity: 1.0; }
+      to { opacity: 0.75; }
+}
+@-moz-keyframes pulse {
+    from { opacity: 0.75; }
+     50% { opacity: 1.0; }
+      to { opacity: 0.75; }
+}
+
+input.progress-disabled
+{
+   -webkit-animation: pulse 0.4s 16;
+   -moz-animation: pulse 0.4s 16;
+}
+
+
+
+body #main .block h2.title
+{
+  color: #b19e5e;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+
+  border: 0px;
+}
+
+#block-islandora_solr_search-current_query .item-list h3,
+#block-islandora_solr_search-basic_facets .item-list h3
+{
+  color: #00547a;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Trebuchet MS, helvetica, arial, sans-serif;
+}
+
+#block-islandora_solr_search-current_query ul.query_list,
+#block-islandora_solr_search-current_query ul.filter_list,
+#block-islandora_solr_search-basic_facets ul.facet_list
+{
+  background-color: transparent;
+  border: 1px solid #a7c0c5;
+  
+  float: left;
+  width: 170px;
+}
+
+#block-islandora_solr_search-current_query ul.query_list li,
+#block-islandora_solr_search-current_query ul.filter_list li,
+#block-islandora_solr_search-basic_facets ul.facet_list li
+{
+ /* float: left;
+  width: 100%; */
+}
+
+.region-sidebar-first
+{
+  margin-right: -240px;
+  width: 240px;
+}
+
+.sidebar-first #content
+{
+  /* background-color: #CCCCCC;*/
+  margin-left: 240px;
+  margin-right: -960px;
+  width: 720px;
+}
+
+.scholar-export-controls .form-item
+{
+  margin: 0.5em 10px 0.5em 0px;
+  float: left;
+}
+
+
+
+
+/* scholar search results table */
+
+
+
+
+
+.scholar-search-results table,
+#islandora-bibliography-form table,
+table.ceacs-authors
+{
+    width: 100%;
+    margin-top: 0;
+}
+
+.scholar-search-results table thead,
+#islandora-bibliography-form table thead,
+table.ceacs-authors thead,
+table.ceacs-authors tfoot
+{
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.scholar-search-results table.ceacs-recentdocs tbody,
+#islandora-bibliography-form table tbody,
+table.ceacs-authors tbody
+{
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #000;
+    padding-bottom: 5px;
+}
+
+.scholar-search-results table tbody
+{
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding-bottom: 5px;
+}
+
+.scholar-search-results table thead th,
+#islandora-bibliography-form table thead th,
+table.ceacs-authors thead th
+{
+  padding: 5px 10px 0px 10px;
+  background: transparent;
+  border: 0px;
+  color: #555;
+}
+
+.scholar-search-results table tbody th, 
+.scholar-search-results table tbody td
+{
+    padding: 0px 10px 20px 10px
+}
+
+#islandora-bibliography-form table tbody th,
+#islandora-bibliography-form table tbody td
+{
+  padding: 10px 10px 15px;
+}
+
+.scholar-search-results table tfoot td,
+#islandora-bibliography-form table tfoot td
+{
+    padding-top: 0px;
+}
+
+.scholar-search-results table thead th,
+#islandora-bibliography-form table thead th,
+table.ceacs-authors th
+{
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.scholar-search-results table tr,
+#islandora-bibliography-form table tr
+{
+  border: 0px;
+}
+
+.scholar-search-results table caption,
+#islandora-bibliography-form table caption,
+table.ceacs-authors caption
+{
+    padding: 0.5em;
+    text-align: left;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 1em;
+    border-top: 8px solid #b19e5e;
+    background: #335d73; /* Old browsers */
+    background: -moz-linear-gradient(top, #335d73 0%, #337695 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#335d73), color-stop(100%,#337695)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #335d73 0%,#337695 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #335d73 0%,#337695 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #335d73 0%,#337695 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#335d73', endColorstr='#337695',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #335d73 0%,#337695 100%); /* W3C */
+}
+
+table.ceacs-authors ul.ceacs-az-list
+{
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+table.ceacs-authors ul.ceacs-az-list li a.active
+{
+  text-decoration: none;
+  padding: 5px 7px;
+  color: #fff;
+  background-color: #008895;
+}
+
+table.ceacs-authors ul.ceacs-az-list li a:hover
+{
+  text-decoration: underline;
+}
+
+table.ceacs-authors tfoot tr
+{
+  border-bottom: 1px solid #000;
+}
+
+table.ceacs-authors thead tr
+{
+  border: 0px;
+}
+table.ceacs-authors thead tr th
+{
+  font-weight: bold;
+}
+
+#islandora-bibliography-form fieldset
+{
+  border: 0px;
+}
+
+
+.ceacs-recentdocs caption
+{
+  text-transform: uppercase;
+}
+
+
+#islandora-bibliography-form .form-submit
+{
+  display: inline-block;
+}
+
+
+.region-sidebar-first #block-superfish-2.block
+{
+  float: left;
+  margin-bottom: 160px;
+}
+
+
+.scholar-export-controls legend,
+.form-export legend
+{
+    color: #000000;
+    font-family: Trebuchet MS,helvetica,arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.scholar-export-controls fieldset,
+.form-export fieldset
+{
+  border: 0px;
+}
+
+.not-front #scholar-search-form
+{
+  padding: 0px;
+  width: 695px;
+}
+.not-front #scholar-search-form #scholar-search-terms,
+.not-front #scholar-search-form .scholar-search-controls
+{
+  float: left;
+  width: 665px;
+  padding: 0px 15px 10px;
+}
+.not-front #scholar-search-form #scholar-search-terms
+{
+  padding: 0px 15px 0px;
+}
+
+.not-front #block-block-3 #scholar-search-form #scholar-search-terms,
+.not-front #block-block-4 #scholar-search-form #scholar-search-terms,
+.not-front #block-block-3 #scholar-search-form .scholar-search-controls,
+.not-front #block-block-4 #scholar-search-form .scholar-search-controls
+{
+  float: left;
+  width: 865px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+.scholar-search-results .icon
+{
+
+}
+
+.scholar-search-results .has-pdf
+{
+
+  width: 39px;
+  height: 39px;
+  background: url('../../images/has-pdf.png') center top no-repeat transparent;
+  margin: 0px 10px 0px 0px;
+}
+
+
+
+
+/* Legend block */
+
+
+#block-block-8
+{
+  float: left;
+  margin: 25px 0px 0px 0px;
+}
+
+#block-block-8 .ceacs-recentdocs ul.access
+{
+  float: left;
+  padding-top: 6px;
+  display: none;
+}
+
+#block-block-8 table.ceacs-recentdocs tbody td
+{
+  padding: 0 3px 5px;
+}
+
+#block-block-8 table.ceacs-recentdocs
+{
+  width: 312px;
+}
+
+#block-block-8 table ul li
+{
+  padding: 2px 0px 5px;
+  width: 24%;
+  text-align: center;
+  vertical-align: top;
+  line-height: 14px;
+} 
+
+
+
+
+/* authors page */
+
+table .item-list ul.ceacs-az-list
+{
+  float: left;
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0 20px 170px;
+}
+
+
+.item-list ul.ceacs-az-list li
+{
+  float: left;
+  display: inline-block;
+  text-align: center;
+  /*width: 22px;*/
+  /*margin: 0px 5px;*/
+  list-style: none;
+  list-style-image: none;
+  width: 20px;
+}
+
+.item-list ul.ceacs-az-list li.first
+{
+  width: 60px;
+}
+
+table.ceacs-authors tr
+{
+  /* border-bottom: 1px solid #adc8d5; */
+  border-bottom: 1px solid #dfdfdf;
+}
+
+table.ceacs-authors td,
+table.ceacs-authors th
+{
+  padding: 5px 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+

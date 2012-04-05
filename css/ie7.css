@@ -3,3 +3,67 @@ margin-top: 2.8em; /* Set this to the same value as the navigation bar. */
 } 
 
 #wrap {display:table;height:100%}
+
+.not-front #block-block-3,
+.not-front #block-block-4
+{
+  width: 890px;
+  padding: 0px 15px;
+}
+
+.not-front #scholar-search-form 
+{
+  padding: 0 0px;
+}
+
+
+
+*+html .ceacs-recentdocs ul.legend li
+{ /* for IE7 */
+  display : inline;
+}
+
+.ceacs-recentdocs ul.legend
+{ /* for IE7 */
+  display : inline;
+  width: auto;
+}
+
+.ceacs-recentdocs ul.legend li
+{ /* for IE7 */
+  display : inline;
+  position: relative;
+  width: 60px;
+  text-align: center;
+  height: 30px;
+}
+
+.ceacs-recentdocs tfoot
+{
+  /* background-color: #efefef; */
+
+}
+
+.ceacs-recentdocs ul.legend li div
+{
+  vertical-align: top;
+}
+
+#block-islandora_solr_search-current_query ul.query_list li,
+#block-islandora_solr_search-current_query ul.filter_list li,
+#block-islandora_solr_search-basic_facets ul.facet_list li
+{
+    line-height: 1.3em;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 0px 0px;
+    list-style: disc outside none;
+    position: relative;
+}
+
+.islandora_solr_search_facet .plusminus
+{
+  float: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

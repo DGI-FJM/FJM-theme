@@ -219,3 +219,46 @@ function phptemplate_file($element){
   return theme_file($element);
 }
 
+
+
+/**
+* Theme's a form table for this module.
+*
+* @param array $element
+* A Drupal Form Element.
+*
+* @return sting
+* HTML that renders a table of settings for datastreams.
+*/
+function fjmtheme_scholar_search_results_table(array $element) {
+  /* We might need to redo the table header theming */
+  /* '#header' => array(theme('table_select_header_cell'), $title), */
+
+  /* set caption */
+  //$element['caption'] = $element['#header'][1];
+  
+  //$element['#header'][1] = t('Title') . ', ' . t('Bibliography');
+  //dsm($element);
+
+  $rows = array();
+  foreach (element_children($element['rows']) as $child) {
+    $setting = $element['rows'][$child];
+    $pid = $setting['#pid'];
+    $fields = array(
+      drupal_render($element['selections'][$pid]) // First field is a checkbox
+    );
+    foreach (element_children($setting) as $property) {
+      $field = $setting[$property];
+      $fields[] = drupal_render($field);
+    }
+    $rows[] = array(
+      'data' => $fields,
+      'class' => isset($setting['#attributes']['class']) ? $setting['#attributes']['class'] : NULL
+    );
+  }
+  $attributes = isset($element['#id']) ? array('id' => $element['#id']) : NULL;
+  /* dsm($element); */
+  /* dsm($rows); */
+  //dsm($rows);
+  return '<div class="scholar-search-results">' . theme_table($element['#header'], $rows, $attributes, $element['#caption'] ) . '</div>';
+}

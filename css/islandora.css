@@ -70,7 +70,8 @@ table.atm_Compositores td.col-first {
 	width: 180px;
 }
 
-.section-fedora .ui-tabs-nav {
+
+.section-fedora .drupal-tabs .ui-tabs-nav {
 	display: none;
 }
 
