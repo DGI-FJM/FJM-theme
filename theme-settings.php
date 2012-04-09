@@ -34,6 +34,7 @@ function fjmtheme_settings($saved_settings) {
       '0' => t('None (default)'),
       '1' => t('atmusica'),
       '2' => t('ceacs'),
+      '3' => t('merce'),
      ),
     '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
     

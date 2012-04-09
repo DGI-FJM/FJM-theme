@@ -1,0 +1,447 @@
+/* Stylesheet for Merce */
+
+/* css3 functions */
+
+@-webkit-keyframes pulse {
+    from { opacity: 0.75; }
+     50% { opacity: 1.0; }
+      to { opacity: 0.75; }
+}
+@-moz-keyframes pulse {
+    from { opacity: 0.75; }
+     50% { opacity: 1.0; }
+      to { opacity: 0.75; }
+}
+@-ms-keyframes pulse {
+    from { opacity: 0.75; }
+     50% { opacity: 1.0; }
+      to { opacity: 0.75; }
+}
+
+/* General */
+
+body
+{
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* copied from forms.css */
+
+a.button,
+.form-submit,
+.button
+{
+    border-color: #753905;
+    border-bottom-color: #602d01;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background: #753905; /* Old browsers */
+    background: -moz-linear-gradient(top, #753905 0%, #602d01 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#753905), color-stop(99%,#602d01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #753905 0%,#602d01 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #753905 0%,#602d01 99%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #753905 0%,#602d01 99%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#753905', endColorstr='#602d01',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #753905 0%,#602d01 99%); /* W3C */
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active,
+a.reposubmission:hover,
+a.reposubmission:focus,
+a.reposubmission:active,
+.book_add_child a:hover,
+.book_add_child a:focus,
+.book_add_child a:active,
+.book_printer a:hover,
+.book_printer a:focus,
+.book_printer a:active,
+.node_read_more a:hover,
+.node_read_more a:focus,
+.node_read_more a:active,
+.comment_add a:hover,
+.comment_add a:focus,
+.comment_add a:active,
+.print_html a:hover,
+.print_html a:focus,
+.print_html a:active,
+.button:hover,
+.button:focus,
+.button:active,
+.form-submit:hover,
+.form-submit:focus,
+.form-submit:active,
+#views-ajax-pad .form-buttons .form-submit:hover,
+#views-ajax-pad .form-buttons .form-submit:focus,
+#views-ajax-pad .form-buttons .form-submit:active,
+.teaser-button:hover,
+.teaser-button:focus,
+.teaser-button:active,
+.container-inline a:hover,
+.container-inline a:focus,
+.container-inline a:active,
+.content-overview-links a:hover,
+.content-overview-links a:focus,
+.content-overview-links a:active
+{
+    border-color: #97551b;
+    border-bottom-color: #602d01;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background: #753905; /* Old browsers */
+    background: -moz-linear-gradient(top, #97551b 0%, #602d01 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#97551b), color-stop(99%,#602d01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #97551b 0%,#602d01 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #97551b 0%,#602d01 99%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #97551b 0%,#602d01 99%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97551b', endColorstr='#602d01',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #97551b 0%,#602d01 99%); /* W3C */
+}
+
+
+/* Header */
+
+/* Navigation */
+
+/* Front */
+
+/* Front Top */
+
+#front-wrapper-top
+{
+  float: left;
+  width: 100%;
+  height: 377px;
+  background: url('../../images/merce/content-top-bg-narrow.png') center top repeat-x transparent;
+}
+
+#front-title
+{
+  float: left;
+  width: 450px;
+  height: 83px;
+  margin: 10px 0px 0px 55px;
+  background: url('../../images/merce/content-top-title.png') center top no-repeat transparent;
+}
+
+#front-portrait
+{
+  float: right;
+  width: 228px;
+  height: 377px;
+  background: url('../../images/merce/content-top-portrait.png') center top no-repeat transparent;
+}
+
+#front-fjm-menu
+{
+  float: left;
+  width: 510px;
+  height: 40px;
+  margin: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 0px;
+  
+  background: url('../../images/merce/menu-top-bg-wide.png') top center repeat-x transparent;
+
+}
+
+ul.fjm-merce-menu
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+ul.fjm-merce-menu li
+{
+  float: left;
+  width: 162px;
+  display: inline-block;
+  margin: 5px 12px 0px 0px;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+ul.fjm-merce-menu li.last
+{
+  margin: 5px 0px 0px 0px;
+}
+
+ul.fjm-merce-menu li a
+{
+  float: left;
+  width: 100%;
+  height: 26px; /* 30px */
+  padding: 5px 0px 0px 0px;
+  
+  background: url('../../images/merce/menu-top-bg.png') center top repeat-x transparent;
+
+  color: #f0eace;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul.fjm-merce-menu li a:hover
+{
+  color: #f3f1e6;
+  text-decoration: none;
+}
+
+#front-carousel
+{
+  float: left;
+  width: 523px;
+  height: 201px;
+  margin: 10px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
+  
+
+}
+
+#front-bio
+{
+  float: right;
+  width: 195px;
+  height: 251px;
+  margin: 90px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+/* Front Bottom */
+
+#front-wrapper-bottom
+{
+  float: left;
+  width: 100%;
+}
+
+h2.front-title
+{
+  float: left;
+  width: 100%;
+  height: 30px;
+  
+  background: url('../../images/merce/h-line-red.png') center bottom repeat-x transparent;
+ 
+  margin: 3px 0px 0px 0px;
+
+  color: #4e0100;    
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+  
+}
+
+#front-browse
+{
+  float: left;
+  width: 510px;
+  margin: 0px 0px 10px 20px;
+  padding: 0px 0px 10px 0px;
+
+  background: url('../../images/merce/h-line-red.png') center bottom repeat-x transparent;
+}
+
+#front-browse-wrapper
+{
+  float: left;
+  width: 100%;
+}
+
+#front-browse .browse-links
+{
+  float: left;
+  position: relative;
+  width: 164px;
+  margin: 0px 9px 0px 0px;
+}
+
+#front-browse .browse-links.last
+{
+  margin: 0px 0px 0px 0px;
+}
+
+#front-browse .browse-links h2
+{
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  margin: 4px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
+    
+  background: url('../../images/merce/browse-header.png') center top repeat-x transparent;
+ 
+
+  color: #aa7d3e;    
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+
+}
+
+#front-browse .browse-links ul
+{
+  float: left;
+  width: 100%;
+  min-height: 215px;
+  margin: 37px 0px 0px 0px;
+  padding: 18px 0px 0px 0px;
+  background: url('../../images/merce/browse-separator.png') center 18px no-repeat #aa7d3e;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+#front-browse .browse-links ul li
+{
+  list-style: none;
+  list-style-image: none;
+}
+
+#front-browse .browse-links ul li a
+{
+  float: left;
+  width: 100%;
+  height: 24px; /* 30px */
+  padding: 7px 0px 0px 0px;
+  
+  background: url('../../images/merce/browse-separator.png') center bottom no-repeat transparent;
+  
+  color: #f0eace;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#front-browse .browse-links ul li a:hover
+{
+  color: #f3f1e6;
+  text-decoration: none;
+}
+
+
+
+#front-search-form
+{
+  float: left;
+  width: 390px;
+  margin: 0px 0px 10px 20px;
+  padding: 0px 0px 10px 0px;
+  
+  background: url('../../images/merce/h-line-red.png') center bottom repeat-x transparent;
+}
+
+#front-search-wrapper
+{
+  float: left;
+  width: 100%;
+}
+
+#front-search-form h3.search-title
+{
+  display: none;
+}
+
+#front-search-form label
+{
+  font-weight: normal;
+  color: #aa7d3e;
+}
+
+#front-search-form label,
+#front-search-form input.form-text
+{
+  width: 200px;
+}
+
+#islandora-extended-search-terms .form-item
+{
+  width: 210px;
+}
+
+#islandora-extended-search-terms .form-item:first-child
+{
+  width: 95px;
+}
+
+#islandora-extended-search-terms .ahah-progress-throbber
+{
+  display: none;
+}
+
+#islandora-extended-search-terms .form-submit:active
+{
+   -webkit-animation: pulse 0.4s infinite;
+   -moz-animation: pulse 0.4s infinite;
+   -ms-animation: pulse 0.4s infinite;
+}
+
+#front-search-form div
+{
+
+}
+
+#front-search-form .islandora-extended-search-controls .form-item
+{
+  float: left;
+  width: 65%;
+}
+
+#front-search-form .islandora-extended-search-controls .form-item:first-child
+{
+  float: left;
+  width: 35%;
+  border-color: #77787b;
+}
+
+/* Front page slideshow */
+
+
+#front-carousel .view-slideshow
+{
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+#front-carousel .views-row
+{
+  float: left;
+  width: 130px;
+  height: 135px;
+  text-align: center;
+}
+
+
+/* Main */
+
+#content-area
+{
+  background: #f0ebe1;
+  float: left;
+}
+
+#main #content .section
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Sidebar */
+
+/* Footer */
+
+

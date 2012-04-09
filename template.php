@@ -75,6 +75,9 @@ switch ($design) {
   case '2':
     drupal_add_css(drupal_get_path('theme', 'fjmtheme') . '/css/custom/ceacs.css', 'theme', 'all');
     break;
+  case '3':
+    drupal_add_css(drupal_get_path('theme', 'fjmtheme') . '/css/custom/merce.css', 'theme', 'all');
+    break;
 }
 
 
