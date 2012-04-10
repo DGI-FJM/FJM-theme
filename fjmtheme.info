@@ -55,7 +55,7 @@ stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
-  ; Set the conditional stylesheets that are processed by IE.
+; Set the conditional stylesheets that are processed by IE.
 conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
 conditional-stylesheets[if lte IE 7][all][] = css/ie7.css
 conditional-stylesheets[if IE][all][]       = css/ie.css

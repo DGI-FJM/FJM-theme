@@ -205,33 +205,42 @@
 #menu-item-id-225,
 #menu-item-id-226,
 #menu-item-id-227,
-#menu-item-id-228 {
+#menu-item-id-228,
+#menu-item-id-605, /* Merce */
+#menu-item-id-606,
+#menu-item-id-607,
+#menu-item-id-608,
+#menu-item-id-609,
+#menu-item-id-610,
+#menu-item-id-611,
+#menu-item-id-612
+{
   background: url('../images/icon-footersprites.png') no-repeat;
   padding-left: 20px;
   padding-top: 0px;
 }
 
-#menu-item-id-613, #menu-item-id-221 { /* calendario */
+#menu-item-id-613, #menu-item-id-221, #menu-item-id-605 { /* calendario */
   background-position: 0 0;
 }
 
-#menu-item-id-616, #menu-item-id-224 { /* rss */
+#menu-item-id-616, #menu-item-id-224, #menu-item-id-608 { /* rss */
   background-position: 0 -56px;
 }
 
-#menu-item-id-617, #menu-item-id-225 { /* enews */
+#menu-item-id-617, #menu-item-id-225, #menu-item-id-609 { /* enews */
   background-position: 0 -14px;
 }
 
-#menu-item-id-618, #menu-item-id-226 { /* podcast */
+#menu-item-id-618, #menu-item-id-226, #menu-item-id-610 { /* podcast */
   background-position: 0 -42px;
 }
 
-#menu-item-id-619, #menu-item-id-227 { /* facebook */
+#menu-item-id-619, #menu-item-id-227, #menu-item-id-611 { /* facebook */
   background-position: 0 -28px;
 }
 
-#menu-item-id-620, #menu-item-id-228 { /* twitter */
+#menu-item-id-620, #menu-item-id-228, #menu-item-id-612 { /* twitter */
   background-position: 0 -70px;
 }
 

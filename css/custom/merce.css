@@ -109,6 +109,11 @@ a.reposubmission:active,
 
 /* Front */
 
+.front h1.title
+{
+  display: none;
+}
+
 /* Front Top */
 
 #front-wrapper-top
@@ -195,25 +200,206 @@ ul.fjm-merce-menu li a:hover
   text-decoration: none;
 }
 
+/* Front page slideshow */
+
 #front-carousel
 {
   float: left;
-  width: 523px;
-  height: 201px;
-  margin: 10px 0px 0px 10px;
+  width: 531px;
+  height: 209px;
+  margin: 5px 0px 0px 9px;
   padding: 0px 0px 0px 0px;
-  
-
 }
+
+#front-carousel .view-slideshow
+{
+  float: left;
+  width: 531px;
+  height: 209px; 
+
+  background: url('../../images/merce/carousel-bg2.png') center top no-repeat transparent;
+}
+#front-carousel .views_slideshow_main
+{
+  float: left;
+  width: 400px;
+  height: 135px;
+  margin: 30px 0px 0px 65px;
+}
+
+#front-carousel .view-slideshow .views_slideshow_singleframe_teaser_section
+{
+  float: left;
+  width: 400px;
+  height: 135px;
+/*   margin: 30px 0px 0px 65px; */
+/*   background: red; */
+}
+
+#front-carousel .view-slideshow .views_slideshow_slide
+{
+  float: left;
+  width: 400px;
+  height: 135px;
+}
+
+#front-carousel .view-slideshow .views_slideshow_slide img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  margin: auto;
+}
+
+#front-carousel .view-slideshow .views_slideshow_slide a
+{
+  float: left;
+  position: relative;
+  width: 130px;
+  height: 135px;
+}
+
+#front-carousel .views-row
+{
+  float: left;
+  width: 130px;
+  height: 135px;
+  margin: 0px 5px 0px 0px;
+  text-align: center;
+}
+
+#front-carousel .views-row-first
+{
+  margin: 0px 0px 0px 0px;
+}
+
+#front-carousel .views_slideshow_controls
+{
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+#front-carousel .views-slideshow-controls-bottom
+{
+  float: left;
+  width: 100%;
+}
+
+#front-carousel .views_slideshow_controls .views_slideshow_previous
+{
+  position: absolute;
+  left: 25px;
+  top: -75px;
+  width: 32px;
+  height: 32px;
+  
+  background: url('../../images/merce/carousel-controls.png') 0px -32px no-repeat transparent;
+  
+  /* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#front-carousel .views_slideshow_controls .views_slideshow_next
+{
+  position: absolute;
+  right: 25px;
+  top: -75px;
+  width: 32px;
+  height: 32px;
+  
+  background: url('../../images/merce/carousel-controls.png') 0px 0px no-repeat transparent;
+  
+  /* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#front-carousel .views_slideshow_singleframe_pager
+{
+/*   float: left; */
+  width: auto;
+  height: 15px;
+  margin: 5px auto 0px auto;
+  text-align: center;
+}
+
+#front-carousel .views_slideshow_singleframe_pager .pager-item
+{
+  width: 15px;
+  height: 10px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#front-carousel .views_slideshow_singleframe_pager .pager-item a
+{
+/*   float: left; */
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  vertical-align: top;
+
+  background: url('../../images/merce/carousel-controls.png') 0px -64px no-repeat transparent;
+  
+  /* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+/*
+  font-size: 10px;
+  line-height: 10px;
+*/
+}
+
+#front-carousel .views_slideshow_singleframe_pager .activeSlide a,
+#front-carousel .views_slideshow_singleframe_pager .pager-item a:hover
+{
+  background-position: 0px -74px;
+}
+
+
+
+
+
+
 
 #front-bio
 {
   float: right;
-  width: 195px;
+  width: 185px;
   height: 251px;
   margin: 90px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+
+#front-bio h2
+{
+  font-size: 16px;
+  font-family: Georgia, Garamond, serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #e9ad5a;
+  margin: 3px 0px 0px 0px;
+  
+  
+}
+
+#front-bio p
+{
+  color: #f2cd99;
+  margin: 10px 0px 5px 0px;
+  line-height: 16px;
+  font-size: 12px;
+  
+}
+
 
 
 /* Front Bottom */
@@ -263,6 +449,7 @@ h2.front-title
   float: left;
   position: relative;
   width: 164px;
+  min-height: 270px;
   margin: 0px 9px 0px 0px;
 }
 
@@ -275,7 +462,9 @@ h2.front-title
 {
   float: left;
   position: absolute;
-  width: 100%;
+  top: 0px;
+  left: 0px;
+  width: 164px;
   height: 42px;
   margin: 4px 0px 0px 0px;
   padding: 5px 0px 0px 0px;
@@ -355,16 +544,16 @@ h2.front-title
   display: none;
 }
 
-#front-search-form label
-{
-  font-weight: normal;
-  color: #aa7d3e;
-}
-
-#front-search-form label,
 #front-search-form input.form-text
 {
   width: 200px;
+}
+
+#front-search-form label
+{
+  width: auto;
+  font-weight: normal;
+  color: #aa7d3e;
 }
 
 #islandora-extended-search-terms .form-item
@@ -389,6 +578,19 @@ h2.front-title
    -ms-animation: pulse 0.4s infinite;
 }
 
+#front-search-form .islandora-extended-search-terms
+{
+  float: left;
+  width: 100%;
+}
+
+#front-search-form .islandora-extended-search-controls
+{
+  float: left;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+
 #front-search-form div
 {
 
@@ -397,33 +599,26 @@ h2.front-title
 #front-search-form .islandora-extended-search-controls .form-item
 {
   float: left;
-  width: 65%;
+  width: auto;
+  margin: 0px 15px 0px 0px;
 }
 
 #front-search-form .islandora-extended-search-controls .form-item:first-child
 {
   float: left;
-  width: 35%;
+  width: auto;
   border-color: #77787b;
 }
 
-/* Front page slideshow */
-
-
-#front-carousel .view-slideshow
+#front-search-form #edit-submit
 {
-  float: left;
-  width: 100%;
-  height: 100%;
+  margin: 16px 0px 0px 0px;
 }
 
-#front-carousel .views-row
-{
-  float: left;
-  width: 130px;
-  height: 135px;
-  text-align: center;
-}
+
+
+
+
 
 
 /* Main */
