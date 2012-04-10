@@ -347,10 +347,10 @@
     <div style="clear:both"></div>
     <?php endif; ?>
 
-  <?php if ($design == '2'): ?>
-    <div class="ceacs-banner"></div>
+  <?php if ($design == '2' OR $design == '3'): ?>
+    <div class="ceacs-banner fjm-banner"></div>
   <?php endif; ?>
-
+  
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?> <?php if ($preface_first || $preface_second || $preface_third || $preface_fourth) { print ' with-preface'; } ?>">
 
       <div id="content" class="column"><div class="section">

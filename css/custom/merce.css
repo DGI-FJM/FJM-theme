@@ -103,6 +103,21 @@ a.reposubmission:active,
 }
 
 
+
+
+h1.title
+{
+  color: #4e0100;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, Garamond, serif;
+  text-transform: none;
+}
+
+
+
+
 /* Header */
 
 /* Navigation */
@@ -402,6 +417,11 @@ ul.fjm-merce-menu li a:hover
 
 
 
+
+
+
+
+
 /* Front Bottom */
 
 #front-wrapper-bottom
@@ -625,8 +645,8 @@ h2.front-title
 
 #content-area
 {
-  background: #f0ebe1;
-  float: left;
+/*   background: #f0ebe1; */
+/*   float: left; */
 }
 
 #main #content .section
@@ -634,6 +654,49 @@ h2.front-title
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+
+.sidebar-first #content
+{
+    margin-left: 200px;
+    width: 760px;
+}
+
+.region-sidebar-first
+{
+  margin-right: -200px;
+  width: 200px;
+}
+
+#content
+{
+  background: #F0EBE1;
+}
+
+.not-front .fjm-banner
+{
+  width: 100%;
+  height: 52px;
+  background: url('../../images/merce/banner-small.png') center top no-repeat transparent;
+}
+
+
+
+
+/* Audio Page */
+
+#audio-mods
+{
+  
+}
+
+
+
+
+
+
+
+
+
 
 /* Sidebar */
 
