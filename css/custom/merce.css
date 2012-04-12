@@ -711,6 +711,12 @@ h2.front-title
   background: #ccb385;
 }
 
+#audio-object .region-left object
+{
+  float: left;
+  margin: 15px 15px 15px 15px;
+}
+
 #audio-object .region-right
 {
   float: right;
