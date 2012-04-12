@@ -128,7 +128,11 @@ function fjmtheme_preprocess_page(&$vars, $hook) {
   $design = theme_get_setting('fjm_design');
   $vars['design'] = $design;
 
-//dsm($design);
+  // add class on solr results page.
+  if (arg(0) == 'islandora' AND arg(1) == 'solr') {
+    $vars['classes_array'][] = 'islandora-solr';
+  }
+
 }
 
 

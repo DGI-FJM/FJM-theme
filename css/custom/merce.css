@@ -118,8 +118,15 @@ h1.title
   font-style: italic;
   font-family: Georgia, Garamond, serif;
   text-transform: none;
+  
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
+div.messages
+{
+  margin: 5px 1em 5px 1em;
+}
 
 
 
@@ -574,6 +581,11 @@ h2.front-title
   width: 200px;
 }
 
+#front-search-form #islandora-extended-search-terms .form-select
+{
+  width: 85px;
+}
+
 #front-search-form label
 {
   width: auto;
@@ -662,14 +674,29 @@ h2.front-title
 
 .sidebar-first #content
 {
-    margin-left: 200px;
-    width: 760px;
+  margin-left: 237px;
+  width: 723px;
 }
 
 .region-sidebar-first
 {
-  margin-right: -200px;
-  width: 200px;
+  margin-right: -237px;
+  width: 237px;
+}
+
+.region-sidebar-first .section
+{
+  padding: 0px 0px 0px 0px;
+}
+
+#main
+{
+  background: #F0EBE1;
+}
+
+.one-sidebar #main
+{
+  background: #ccb385;
 }
 
 #content
@@ -677,12 +704,32 @@ h2.front-title
   background: #F0EBE1;
 }
 
+
+.one-sidebar .region-content-top,
+.one-sidebar #content-area
+{
+  margin: 1em 1em 1em 1em;
+}
+
+
+
+
 .not-front .fjm-banner
 {
   width: 100%;
   height: 52px;
   background: url('../../images/merce/banner-small.png') center top no-repeat transparent;
 }
+
+.islandora-solr .fjm-banner
+{
+  width: 100%;
+  height: 52px;
+  background: url('../../images/merce/banner-small-search.png') center top no-repeat transparent;
+}
+
+
+
 
 
 
@@ -833,6 +880,69 @@ h2.front-title
 }
 
 
+
+
+/* Solr */
+
+.region-sidebar-first
+{
+  color: #f0eace;
+}
+
+.region-sidebar-first a
+{
+  color: #733E13;
+}
+
+.region-sidebar-first a.active
+{
+  color: #733E13;
+  font-weight: bold;
+}
+
+
+#block-islandora_solr_search-current_query ul,
+#block-islandora_solr_search-basic_facets ul
+{
+  background: #aa7d3e;
+  padding: 8px 8px 8px 8px;
+
+  list-style: none;
+  list-style-image: none;
+}
+
+#block-islandora_solr_search-current_query ul li,
+#block-islandora_solr_search-basic_facets ul li
+{
+  list-style: none;
+  list-style-image: none;
+}
+
+#block-islandora_solr_search-current_query ul li a,
+#block-islandora_solr_search-basic_facets ul li a
+{
+  color: #f0eace;
+}
+
+
+
+
+.region-sidebar-first h2
+{
+  color: #733e13;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.region-sidebar-first h3
+{
+  color: #733e13;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
