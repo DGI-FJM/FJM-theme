@@ -33,12 +33,32 @@
 <?php if ($results == ''): print '<p>' . t('Your search yielded no results') . '</p>'; ?>
 <?php else: ?>
 <?php foreach ($results as $id => $result): ?>
+<?php
+  // string length
+  $strlen = 80;
+  $title = $result['mods_title_ms']['value'];
+  if (strlen($title) > $strlen) {
+    $title = substr($title, 0, $strlen) . '...';
+  }
+
+  if (empty($result['page']['value'])) {
+    $link_url = $base_url . '/fedora/repository/' . $result['PID']['value'];
+  }
+  else {
+    $link_url = $base_url . '/fedora/repository/' . $result['link_PID']['value'] . '?page=' . $result['page']['value'];
+  }
+  
+  // Photo object should use parent's PID for TN
+  if (!empty($result['parent_pid']['value'])) {
+    $result['PID']['value'] = $result['parent_pid']['value'];
+  }
+?>
   <div class="islandora-solr-result">
-    <a class="solr-field <?php print $result['PID']['class']; ?>" href="<?php print $base_url . '/fedora/repository/' . $result['PID']['value']; ?>" title="<?php print $result['mods_title_ms']['value']; ?>">
+    <a class="solr-field <?php print $result['PID']['class']; ?>" href="<?php print $link_url; ?>" title="<?php print $result['mods_title_ms']['value']; ?>">
       <span class="solr-img-wrapper">
         <img class="solr-img" src="<?php print $base_url . '/fedora/repository/' . $result['PID']['value'] . '/TN/TN'; ?>">
       </span>
-      <span class="solr-title"><?php print $result['mods_title_ms']['value']; ?></span>
+      <span class="solr-title"><?php print $title; ?></span>
     </a>
   </div>
 <?php endforeach; ?>
