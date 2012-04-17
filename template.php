@@ -269,3 +269,31 @@ function fjmtheme_scholar_search_results_table(array $element) {
   return '<div class="scholar-search-results">' . theme_table($element['#header'], $rows, $attributes, $element['#caption'] ) . '</div>';
 
 }
+
+/**
+* Tweak the solr results logic for parent->child relationships in Merce
+*/
+function fjmtheme_preprocess_islandora_solr_custom(&$variables) {
+  global $base_url;
+  if (strpos($base_url, 'merce') != -1) {
+    foreach ($variables['results'] AS &$result) {
+      // This is a photo, use parent's PID and link to book?page
+      if ($result['rels_hasModel_uri_ms']['value'] == 'info:fedora/cam:photoCModel') {
+        $parent_pid = explode('cam:', $result['rels_isMemberOf_uri_ms']['value']);
+        $parent_info = explode('-', $parent_pid[1]);
+        $result['page']['value'] = $parent_info[1];
+        $result['parent_pid']['value'] = 'cam:' . $parent_pid[1];
+        $result['link_PID']['value'] = 'cam:' . $parent_info[0];
+      }
+  
+      // This is a page, user parent's PID for link
+      if ($result['rels_hasModel_uri_ms']['value'] == 'info:fedora/islandora:pageCModel') {
+        $parent_pid = explode('cam:', $result['rels_isMemberOf_uri_ms']['value']);
+        $parent_info = explode('-', $parent_pid[1]);
+        $result['page']['value'] = 'cam:' . $parent_info[1];
+        $result['link_PID']['value'] = 'cam:' . $parent_info[0];
+      }
+    }
+  } 
+}
+
