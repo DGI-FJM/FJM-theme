@@ -288,9 +288,9 @@ function fjmtheme_preprocess_islandora_solr_custom(&$variables) {
   
       // This is a page, user parent's PID for link
       if ($result['rels_hasModel_uri_ms']['value'] == 'info:fedora/islandora:pageCModel') {
-        $parent_pid = explode('cam:', $result['rels_isMemberOf_uri_ms']['value']);
+        $parent_pid = explode('cam:', $result['PID']['value']);
         $parent_info = explode('-', $parent_pid[1]);
-        $result['page']['value'] = 'cam:' . $parent_info[1];
+        $result['page']['value'] = $parent_info[1];
         $result['link_PID']['value'] = 'cam:' . $parent_info[0];
       }
     }
