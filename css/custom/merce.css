@@ -445,7 +445,7 @@ ul.fjm-merce-menu li a:hover
 {
   color: #f2cd99;
   margin: 10px 0px 5px 0px;
-  line-height: 16px;
+  line-height: 17px;
   font-size: 12px;
   
 }
@@ -700,6 +700,12 @@ h2.front-title
 .one-sidebar #main #content .section
 {
   margin: 10px 10px 10px 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+.not-front.no-sidebars #main #content .section
+{
+  margin: 15px 15px 15px 15px;
   padding: 0px 0px 0px 0px;
 }
 
@@ -1033,5 +1039,61 @@ h2.front-title
 /* Sidebar */
 
 /* Footer */
+
+
+
+
+/* Collection overviews */
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table
+{
+
+}
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table tr
+{
+
+}
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table th,
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table td
+{
+
+}
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table td a
+{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table td a:hover
+{
+
+}
+
+.page-fedora-repository-camcollectionrecordings .tabs-tabset table td img
+{
+
+}
+
+
+
+
+
+
+
+
+
+/* Overriding bad css */
+
+.page-node-49 #content .section h1.title,
+.page-node-23 #content .section h1.title
+{
+  display: block; /* IE 7 doesn't know 'inherit' */
+}
+
+
 
 
