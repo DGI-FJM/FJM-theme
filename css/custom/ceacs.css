@@ -1053,7 +1053,9 @@ table.ceacs-authors thead tr th
 .region-sidebar-first #block-superfish-2.block
 {
   float: left;
-  margin-bottom: 160px;
+  height: auto;
+  margin-bottom: 0px;
+  border: 0px;
 }
 
 
@@ -1123,7 +1125,7 @@ table.ceacs-authors thead tr th
 #block-block-8
 {
   float: left;
-  margin: 25px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 #block-block-8 .ceacs-recentdocs ul.access
