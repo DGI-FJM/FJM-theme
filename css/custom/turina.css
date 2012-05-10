@@ -9,7 +9,11 @@ body
 }
 
 
-
+h2,
+h3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
@@ -25,6 +29,136 @@ body
   display: none;
 }
 
+.front-wrapper-top
+{
+  float: left;
+  width: 930px;
+  padding: 18px 15px 15px 15px;
+  background: url('../../images/turina/border.jpg') center top repeat-x transparent;
+}
+
+.front-wrapper-bottom
+{
+  float: left;
+  width: 960px;
+  padding: 8px 0px 0px;
+  position: relative;
+  background: url('../../images/turina/border.jpg') center top repeat-x transparent;
+}
+
+.front-bio
+{
+  float: left;
+  width: 196px;
+}
+
+.bio-image
+{
+  float: left;
+  width: 196px;
+  height: 213px;
+  background: url('../../images/turina/portrait.jpg') 0px 0px no-repeat transparent;
+}
+
+.front-bio p
+{
+  font-size: 13px;
+  font-family: "Times New Roman", Times, georgia, serif;
+}
+
+.front-postcard
+{
+  float: right;
+  width: 734px;
+  height: 477px;
+  background: url('../../images/turina/postcard.jpg') 0px 0px no-repeat transparent;
+  
+
+  -webkit-box-shadow: 5px 5px 5px 0px #666; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          box-shadow: 5px 5px 5px 0px #666; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+.front-wrapper-bottom .col-1
+{
+  float: left; 
+  width: 162px;  /* 192px */
+  padding: 0px 15px;
+  margin: 15px 0px;
+}
+
+.front-wrapper-bottom .col-2
+{
+  float: left;
+  width: 354px; /* 384px */
+  padding: 15px 15px;
+}
+
+h2.front-title
+{
+  margin: 0px;
+
+  font-size: 16px;
+  color: #822603;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h3.front-title
+{
+  font-size: 16px;
+  color: #822603;
+  font-weight: normal;
+
+  border-bottom: 2px solid #b9b8b8;
+  line-height: 20px;
+}
+
+.front-wrapper-bottom ul
+{
+  padding: 0px;
+  margin: 5px 0;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+.front-wrapper-bottom ul li
+{
+  list-style: none;
+  list-style-image: none;
+}
+
+.front-wrapper-bottom ul li a
+{
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.front-wrapper-bottom ul li a:hover
+{
+  text-decoration: none;
+  border-bottom: 2px solid #e8b703;  
+}
+
+.front-collections
+{
+  padding: 0px 14px;
+  border-left: 1px solid #b9b8b8;
+  border-right: 1px solid #b9b8b8;
+}
+
+.front-search
+{
+  float: left;
+  width: 372px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  bottom: 0;
+  
+  background-color: #ededed;
+}
 
 
 
@@ -34,6 +168,18 @@ body
 .not-front .fjm-banner
 {
   
+}
+
+#content .section,
+.no-sidebars #content .section
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.front #content-area
+{
+  margin-top: 15px;
 }
 
 
