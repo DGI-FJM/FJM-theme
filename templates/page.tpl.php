@@ -347,7 +347,7 @@
     <div style="clear:both"></div>
     <?php endif; ?>
 
-  <?php if ($design == '2' OR $design == '3'): ?>
+  <?php if ($design == '2' OR $design == '3' OR $design == '4'): ?>
     <div class="ceacs-banner fjm-banner"></div>
   <?php endif; ?>
   

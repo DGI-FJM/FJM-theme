@@ -1,0 +1,40 @@
+/* Stylesheet for Turina */
+
+/* General */
+
+body
+{
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Front */
+
+.front h1.title
+{
+  display: none;
+}
+
+
+
+
+
+/* Main */
+
+.not-front .fjm-banner
+{
+  
+}
+
+
+/* Footer */
