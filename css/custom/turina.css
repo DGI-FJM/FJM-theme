@@ -46,6 +46,13 @@ h3
   background: url('../../images/turina/border.jpg') center top repeat-x transparent;
 }
 
+.front-wrapper-bottom-inner
+{
+  float: left;
+  width: 960px;
+  background: url('../../images/turina/faux-column.jpg') right top repeat-y transparent;
+}
+
 .front-bio
 {
   float: left;
@@ -76,6 +83,12 @@ h3
 
   -webkit-box-shadow: 5px 5px 5px 0px #666; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
           box-shadow: 5px 5px 5px 0px #666; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+          
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 .front-wrapper-bottom .col-1
@@ -89,8 +102,9 @@ h3
 .front-wrapper-bottom .col-2
 {
   float: left;
-  width: 354px; /* 384px */
-  padding: 15px 15px;
+  width: 352px; /* 384px */
+  padding: 0px 15px 0px;
+  margin: 15px 0px;
 }
 
 h2.front-title
@@ -116,7 +130,7 @@ h3.front-title
 .front-wrapper-bottom ul
 {
   padding: 0px;
-  margin: 5px 0;
+  margin: 10px 0 5px;
   
   list-style: none;
   list-style-image: none;
@@ -152,12 +166,21 @@ h3.front-title
 {
   float: left;
   width: 372px;
-  position: absolute;
-  right: 0;
-  top: 8px;
-  bottom: 0;
-  
-  background-color: #ededed;
+}
+
+.front ul.quicktabs_tabs
+{
+  margin: 0px 0px 0px 0px;
+}
+
+.front .quicktabs_main.quicktabs-style-nostyle
+{
+  background-color: #fff;
+}
+
+.front #quicktabs-1
+{
+  margin: 10px 0px 0px 0px;
 }
 
 
