@@ -9,6 +9,20 @@ body
 }
 
 
+h1.title
+{
+  padding: 2px 0px 0px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: url('../../images/turina/title-icon.png') 0px 0px no-repeat transparent;
+} 
+
 h2,
 h3
 {
@@ -190,11 +204,13 @@ h3.front-title
 
 .not-front .fjm-banner
 {
-  
+  width: 960px;
+  height: 96px;
+  background: url('../../images/turina/turina-banner.jpg') 0px 0px no-repeat transparent;
 }
 
-#content .section,
-.no-sidebars #content .section
+.front #content .section,
+.front.no-sidebars #content .section
 {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
