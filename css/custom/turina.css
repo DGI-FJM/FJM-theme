@@ -202,6 +202,11 @@ h3.front-title
 
 /* Main */
 
+.not-front #main
+{
+  padding-bottom: 40px;
+}
+
 .not-front .fjm-banner
 {
   width: 960px;
@@ -222,4 +227,139 @@ h3.front-title
 }
 
 
+
+/* Solr results */
+
+.islandora-solr #main
+{
+  background: url('../../images/turina/faux-column-solr-220.jpg') left top repeat-y transparent;
+}
+
+.islandora-solr .region-sidebar-first .section
+{
+  padding: 0px;
+}
+
+.islandora-solr .region-sidebar-first
+{
+  width: 220px;
+  margin-right: -220px;
+}
+
+.islandora-solr.sidebar-first #content {
+  margin-left: 220px;
+  width: 740px;
+}
+
+.islandora-solr .region-sidebar-first ul
+{
+  background-color: #ededed;
+}
+
+.islandora-solr .region-sidebar-first h2
+{
+  color: #8c6e00;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.islandora-solr .region-sidebar-first h3
+{
+  font-weight: normal;
+}
+
+.islandora-solr-content
+{
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background: url('../../images/turina/border-inverted.jpg') center top repeat-x transparent;
+  border-left: 2px solid #608c94;
+  border-right: 2px solid #608c94;
+  border-bottom: 2px solid #608c94;
+}
+
+ol.islandora-solr-search-results
+{
+  float: left;
+  margin: 15px 5px;
+}
+
+.islandora-solr-search-results li
+{
+  float: left;
+  width: 655px;
+  margin: 5px 10px 5px 0px;
+  padding: 10px;
+}
+
+.islandora-solr-search-results li.odd
+{
+  background-color: #ededed;
+}
+
+.islandora-solr-search-results li.even
+{
+  background-color: #f4f4f4;
+}
+
+.islandora-solr-search-results .solr-result
+{
+  float: left;
+  width: 100%;
+}
+
+.islandora-solr-search-results .solr-result .solr-left
+{
+  float: left;
+  width: 495px;
+}
+
+.islandora-solr-search-results .solr-result .solr-right
+{
+  float: right;
+  width: 150px;
+}
+
+.islandora-solr-search-results .solr-result .solr-right img
+{
+  width: 150px;
+}
+
+.islandora-solr-search-results .solr-result .solr-label
+{
+  float: left;
+  width: 75px;
+  margin-bottom: 5px;
+}
+
+.islandora-solr-search-results .solr-result .solr-label label
+{
+  font-weight: bold;
+}
+
+.islandora-solr-search-results .solr-result .solr-value
+{
+  float: left;
+  width: 420px;
+  margin-bottom: 5px;
+}
+
+.islandora-solr-content p.no-results
+{
+  margin: 1.5em 10px;
+}
+
+.islandora-solr-content ul.pager
+{
+  margin: 1em 0px 0px;
+}
+
+
 /* Footer */
+
+
+
+
