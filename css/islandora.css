@@ -70,11 +70,6 @@ table.atm_Compositores td.col-first {
 	width: 180px;
 }
 
-
-.section-fedora .drupal-tabs .ui-tabs-nav {
-	display: none;
-}
-
 .atm_solr_letterblock {
 	text-align: center;
 }
@@ -101,3 +96,4 @@ ul.atm_solr_letterblock li a.active {
 .concert_top_right {
 	width: 20%;
 }
+

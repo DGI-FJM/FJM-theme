@@ -268,6 +268,7 @@ h3.front-title
   font-weight: normal;
 }
 
+#turina-book,
 .islandora-solr-content
 {
   float: left;
@@ -357,6 +358,82 @@ ol.islandora-solr-search-results
   margin: 1em 0px 0px;
 }
 
+/* Book view */
+
+#turina-book * {
+	padding: 0.25em;
+}
+
+#turina-book > div {
+	width: 45%;
+	padding: 1em;
+	float: left;
+}
+
+#turina-book > div > * {
+	width: 100%;
+	float: left;
+	clear: left;
+}
+
+#turina-book .desc-list > * {
+	float: left;
+}
+
+#turina-book .title {
+    /*color: #608c94;*/
+    font-size: 16px;
+}
+
+#turina-book .desc,
+#turina-book .subtitle {
+	font-size: 14px;
+}
+
+#turina-book .desc-list > label {
+	width: 20%;
+	clear: left;
+	font-weight: bold;
+}
+
+#turina-book a span.icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+#turina-book a.pdf-link {
+	display: inline-block;
+  font-size: 14px;
+}
+
+#turina-book a.pdf-link span.icon {
+	width: 22px;
+	height: 30px;
+	background: url("../../images/pdficon.png");
+}
+
+#turina-book .fullview-link-wrapper {
+	border-bottom: 1px solid;
+	padding: 0px;
+}
+
+#turina-book a.fullview-link {
+	display: inline-block;
+	padding: 0.5em;
+	margin: 0px;
+	width: 20%;
+	background-color: #DDDDDD;
+	border: 1px solid;
+	border-color: #555555;
+}
+
+#turina-book a.fullview-link span.icon {
+  width: 23px;
+  height: 23px;
+  background: url("../../images/mag_glass/greenblue-mag_glass.png");
+  float: right;
+}
 
 /* Footer */
 
