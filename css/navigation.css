@@ -209,25 +209,25 @@ li a.active {
 #menu-item-id-610,
 #menu-item-id-611,
 #menu-item-id-612,
-#menu-item-id-481, /* Ensayos*/
+#menu-item-id-481, /* Ensayos */
 #menu-item-id-484,
 #menu-item-id-485,
 #menu-item-id-486,
 #menu-item-id-487,
 #menu-item-id-488,
-#menu-item-id-406,  /* Turina */
+#menu-item-id-406, /* Turina */
 #menu-item-id-409,
 #menu-item-id-410,
 #menu-item-id-411,
 #menu-item-id-412,
 #menu-item-id-413
 {
-  background: url('http://digital.march.es/merce/sites/all/themes/FJM/images/icon-footersprites.png') no-repeat;
+  background: url('http://digital.march.es/sites/all/themes/FJM/images/icon-footersprites.png') no-repeat;
   padding-left: 20px;
   padding-top: 0px;
 }
 
-#menu-item-id-613, #menu-item-id-221, #menu-item-id-605, #menu-item-id-406 { /* calendario */
+#menu-item-id-613, #menu-item-id-221, #menu-item-id-605, #menu-item-id-481, #menu-item-id-406 { /* calendario */
   background-position: 0 0;
 }
 
