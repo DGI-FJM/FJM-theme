@@ -145,7 +145,6 @@ h3.front-title
 {
   padding: 0px;
   margin: 10px 0 5px;
-  
   list-style: none;
   list-style-image: none;
 }
@@ -197,7 +196,15 @@ h3.front-title
   margin: 10px 0px 0px 0px;
 }
 
+.front-browse ul.fjm-turina-links-browse.link-level-0 {
+	padding-left: 0px;
+	margin-top: 10px;
+}
 
+.front-browse ul.fjm-turina-links-browse {
+  padding-left: 20px;
+  margin-top: 0px;
+}
 
 
 /* Main */
@@ -433,6 +440,32 @@ ol.islandora-solr-search-results
   height: 23px;
   background: url("../../images/mag_glass/greenblue-mag_glass.png");
   float: right;
+}
+
+/* Name/subject facet lists */
+
+div.facet-list ul.turina-letterer {
+	font-weight: bold;
+	margin-left: 120px;
+}
+
+div.facet-list ul.turina-letterer li {
+	display: inline-block;
+	list-style: none outside none;
+	text-align: center;
+	padding: .25em .5em;
+}
+
+div.facet-list ul.turina-letterer li.selected {
+  background-color: #008895;
+}
+
+div.facet-list ul.turina-letterer li.selected a {
+	color: #EEEEEE;
+}
+
+div.facet-list ul.turina-facets {
+	margin-left: 300px;
 }
 
 /* Footer */
