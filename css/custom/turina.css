@@ -89,6 +89,12 @@ h3
   margin: 10px 0;
 }
 
+.front-bio p.quote
+{
+  font-style: italic;
+  font-size: 15px;
+}
+
 .front-postcard
 {
   float: right;
@@ -135,7 +141,7 @@ h2.front-title
 
 h3.front-title
 {
-  font-size: 16px;
+  font-size: 15px;
   color: #822603;
   font-weight: normal;
 
