@@ -36,7 +36,7 @@
 <?php
   // string length
   $strlen = 80;
-  $title = $result['mods_title_ms']['value'];
+  $title = $result['mods_title_local_ms']['value'];
   if (strlen($title) > $strlen) {
     $title = substr($title, 0, $strlen) . '...';
   }
@@ -54,7 +54,7 @@
   }
 ?>
   <div class="islandora-solr-result">
-    <a class="solr-field <?php print $result['PID']['class']; ?>" href="<?php print $link_url; ?>" title="<?php print $result['mods_title_ms']['value']; ?>">
+    <a class="solr-field <?php print $result['PID']['class']; ?>" href="<?php print $link_url; ?>" title="<?php print $result['mods_title_local_ms']['value']; ?>">
       <span class="solr-img-wrapper">
         <img class="solr-img" src="<?php print $base_url . '/fedora/repository/' . $result['PID']['value'] . '/TN/TN'; ?>">
       </span>
