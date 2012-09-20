@@ -78,7 +78,7 @@ table.atm_Compositores td.col-first {
     padding: 0.2em 0.5em;
 }
 
-ul.atm_solr_letterblock li a.active {
+ul.atm_solr_letterblock li a.selected {
     background-color: #00818E;
     color: #FFFFFF;
     font-weight: normal;
