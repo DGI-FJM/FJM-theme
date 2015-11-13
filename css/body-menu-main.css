@@ -11322,3 +11322,22 @@ li.formatosmusic, li.formatosconf, li.formatosbib1{
   padding-left: 10px;
   padding-right: 10px;
 }
+
+#navmenu .submenu .formatosconfmulti, #navmenu .submenu .formatosconf, #navmenu .biblioteca .formatosbib1, #navmenu .biblioteca .formatosbib2, #navmenu .submenu .formatosfun {
+    color: #151515;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+.fundacion span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
