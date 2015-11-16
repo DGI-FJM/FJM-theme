@@ -582,15 +582,6 @@ ul.quicktabs-style-nostyle, ul.primary {
   width: 100%;
 }
 
-
-#scholar-search-results-form ul.pager
-{
-  visibility: hidden;
-  margin: 0px 0px 0px 0px;
-  height: 0px;
-}
-
-
 .section-fedora #scholar-search-form .scholar-search-controls
 {
   border-bottom: 0px;
