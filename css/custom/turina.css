@@ -349,6 +349,7 @@ ol.islandora-solr-search-results
   float: left;
   width: 75px;
   margin-bottom: 5px;
+  clear: left;
 }
 
 .islandora-solr-search-results .solr-result .solr-label label
@@ -405,9 +406,39 @@ ol.islandora-solr-search-results
 	font-size: 14px;
 }
 
+#turina-book .desc-list > div.item-list h3 {
+  width: 20%;
+  color: #555555;
+  font-size: 1em;
+  margin: 0px;
+  line-height: 1em;
+  float: left;
+}
+
+#turina-book .desc-list > div.item-list ul {
+  margin-top: 0px;
+  float: left;
+  width: auto;
+  max-width: 76%;
+}
+
+#turina-book .desc-list > div.item-list li {
+  margin-left: 1em;
+}
+
+#turina-book .desc-list > div.item-list {
+  padding: 0px;
+  line-height: 1em;
+  width: 100%;
+}
+
+#turina-book .desc-list > label,
+#turina-book .desc-list div.item-list {
+  clear: left;
+}
+
 #turina-book .desc-list > label {
 	width: 20%;
-	clear: left;
 	font-weight: bold;
 }
 
