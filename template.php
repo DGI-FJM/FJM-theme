@@ -129,7 +129,6 @@ function fjmtheme_preprocess(&$vars, $hook) {
  */
 
 function fjmtheme_preprocess_page(&$vars, $hook) {
-
   // Optionally add CSS files for the user-selected color design.
   $design = theme_get_setting('fjm_design');
   $vars['design'] = $design;
