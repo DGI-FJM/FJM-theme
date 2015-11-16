@@ -1208,7 +1208,6 @@ q:after, q:before {
     background: url(http://recursos.march.es/web/imgad/menu-g-background2.png) repeat;
     background-color: #007E8A;
     position: relative;
-    z-index: 60;
 }
 #menu a {
     display: block
